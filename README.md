@@ -13,7 +13,7 @@
 
 ## Figma
 
-[PSE Website Template Figma Design File](https://www.figma.com/design/nKupCSQZzxtJrhdS67JozR/Summer--25-PSE?node-id=0-1&p=f&t=I8ypk1UchwT9yolV-0)
+[PSE Website Figma Design File](https://www.figma.com/design/nKupCSQZzxtJrhdS67JozR/Summer--25-PSE?node-id=0-1&p=f&t=I8ypk1UchwT9yolV-0)
 
 ## Node.js
 

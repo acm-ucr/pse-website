@@ -1,1 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Lato:wght@300;400;700&family=GFS+Didot&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --color-pse-purple-100: #b09fca;
+  --color-pse-purple-200: #7a63a3;
+  --color-pse-purple-300: #544175;
+  --color-pse-gray-100: #c1c1c1;
+  --color-pse-black-100: #2a2a2a;
+  --color-pse-yellow-100: #ffc653;
+
+  --font-pse-crimson-text: "Crimson Text", serif;
+  --font-pse-lato: "Lato", sans-serif;
+  --font-pse-gfs-didot: "GFS Didot", serif;
+}
+
+body {
+  font-family: var(--font-pse-crimson-text);
+}

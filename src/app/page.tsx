@@ -1,9 +1,9 @@
-import ExampleComponent from "@/components/Example";
+import PSEBanner from "@/components/landing/PSEBanner";
 
 const Home = () => {
   return (
     <div className="flex h-screen w-screen items-center justify-center">
-      <ExampleComponent />
+      <PSEBanner />
     </div>
   );
 };

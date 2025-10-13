@@ -17,7 +17,7 @@ export default function Footer() {
             />
             <h1 className="text-2xl font-semibold text-[#FFC653]">ΠΣΕ</h1>
           </div>
-          <p className="text-sm ">
+          <p className="text-sm">
             © 2025 Pi Sigma Epsilon — Theta Gamma Chapter
           </p>
         </div>

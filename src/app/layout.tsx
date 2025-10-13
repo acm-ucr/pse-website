@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
-
+import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -17,7 +17,10 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+        <ReactQueryClientProvider>
+          {children}
+          <Footer />
+        </ReactQueryClientProvider>
       </body>
     </html>
   );

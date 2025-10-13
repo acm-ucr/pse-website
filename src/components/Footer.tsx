@@ -4,7 +4,7 @@ import { FaInstagram, FaLinkedin, FaDiscord } from "@/icons";
 
 export default function Footer() {
   return (
-    <div className="w-full bg-[#2B2B2B] px-8 py-3 text-white">
+    <div className="w-full bg-[#2A2A2A] px-8 py-3 text-white">
       <div className="grid grid-cols-2 items-start gap-2">
         <div className="flex flex-col">
           <div className="flex items-center gap-2">
@@ -15,9 +15,9 @@ export default function Footer() {
               height={24}
               className="object-contain"
             />
-            <h1 className="text-2xl font-semibold text-[#E3B23C]">ΠΣΕ</h1>
+            <h1 className="text-2xl font-semibold text-[#FFC653]">ΠΣΕ</h1>
           </div>
-          <p className="text-sm text-gray-300">
+          <p className="text-sm ">
             © 2025 Pi Sigma Epsilon — Theta Gamma Chapter
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function Footer() {
 
           <Link
             href="mailto:pres.pseatucr@gmail.com"
-            className="text-sm text-gray-300 hover:underline"
+            className="text-sm hover:underline"
           >
             pres.pseatucr@gmail.com
           </Link>

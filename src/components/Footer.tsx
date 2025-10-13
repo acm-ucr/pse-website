@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col">
           <div className="flex items-center gap-2">
             <Image
-              src="/PSE-Gradient-Logo-3.png"
+              src="/PSE-Gradient-Logo-3.webp"
               alt="PSE Logo"
               width={24}
               height={24}
@@ -50,7 +50,7 @@ export default function Footer() {
               className="transition hover:opacity-80"
             >
               <Image
-                src="/linktree_icon_pse.png"
+                src="/linktree_icon_pse.webp"
                 alt="Linktree Icon"
                 width={22}
                 height={22}

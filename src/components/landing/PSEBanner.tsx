@@ -1,5 +1,5 @@
 import React from "react";
-import PSEBg from "@/public/landing/pse_bg.png";
+import PSEBg from "@/public/landing/pse_bg.webp";
 import Image from "next/image";
 
 const PSEBanner = () => {

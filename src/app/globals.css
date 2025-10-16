@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-pse-purple-100: #F9F4FF;
+  --color-pse-purple-100: #f9f4ff;
   --color-pse-purple-200: #b09fca;
   --color-pse-purple-300: #7a63a3;
   --color-pse-purple-400: #544175;

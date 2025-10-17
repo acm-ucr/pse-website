@@ -10,8 +10,8 @@ const OurMission = () => {
           alt="ourmission"
           className="absolute right-[8vh] z-10 h-[57vh] w-full rounded-2xl object-cover"
         />
-        <div className="bg-pse-purple-200 absolute right-[-0vh] bottom-[-38vh] z-0 h-[35vh] w-[50vh] rounded-2xl md:bottom-[2vh]" />
-        <div className="bg-pse-purple-100 absolute top-[3vh] -right-[8vh] z-10 h-[11vh] w-[22vh] rounded-2xl" />
+        <div className="bg-pse-purple-300 absolute right-[-0vh] bottom-[-38vh] z-0 h-[35vh] w-[50vh] rounded-2xl md:bottom-[2vh]" />
+        <div className="bg-pse-purple-200 absolute top-[3vh] -right-[8vh] z-10 h-[11vh] w-[22vh] rounded-2xl" />
       </div>
 
       <div className="order-1 flex flex-col items-center justify-center text-center md:items-end md:text-right">

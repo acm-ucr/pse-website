@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaLinkedin, FaDiscord } from "@/icons";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { SiLinktree } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <div className="w-full bg-[#2B2B2B] px-8 py-3 text-white">
+    <div className="w-full bg-[#2A2A2A] px-8 py-3 text-white">
       <div className="grid grid-cols-2 items-start gap-2">
         <div className="flex flex-col">
           <div className="flex items-center gap-2">
@@ -15,9 +16,9 @@ export default function Footer() {
               height={24}
               className="object-contain"
             />
-            <h1 className="text-2xl font-semibold text-[#E3B23C]">ΠΣΕ</h1>
+            <h1 className="text-2xl font-semibold text-[#FFC653]">ΠΣΕ</h1>
           </div>
-          <p className="text-sm text-gray-300">
+          <p className="text-sm">
             © 2025 Pi Sigma Epsilon — Theta Gamma Chapter
           </p>
         </div>
@@ -25,7 +26,7 @@ export default function Footer() {
         <div className="flex flex-col items-end gap-2">
           <div className="flex gap-2">
             <Link
-              href="https://instagram.com/ucrpse"
+              href="https://www.instagram.com/ucrpse/"
               target="_blank"
               className="transition hover:opacity-80"
             >
@@ -33,35 +34,25 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://www.linkedin.com/company/pi-sigma-epsilon/"
+              href="https://www.linkedin.com/company/psetg/"
               target="_blank"
               className="transition hover:opacity-80"
             >
               <FaLinkedin size={22} />
             </Link>
 
-            <Link href="#" className="transition hover:opacity-80">
-              <FaDiscord size={22} />
-            </Link>
-
             <Link
-              href="https://linktr.ee/pseatucr"
+              href="https://linktr.ee/ucrpse"
               target="_blank"
               className="transition hover:opacity-80"
             >
-              <Image
-                src="/linktree_icon_pse.webp"
-                alt="Linktree Icon"
-                width={22}
-                height={22}
-                className="object-contain"
-              />
+              <SiLinktree size={22} />
             </Link>
           </div>
 
           <Link
             href="mailto:pres.pseatucr@gmail.com"
-            className="text-sm text-gray-300 hover:underline"
+            className="text-sm hover:underline"
           >
             pres.pseatucr@gmail.com
           </Link>

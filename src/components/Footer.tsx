@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col">
           <div className="flex items-center gap-2">
             <Image
-              src="/PSE-Gradient-Logo-3.png"
+              src="/PSE-Gradient-Logo-3.webp"
               alt="PSE Logo"
               width={24}
               height={24}

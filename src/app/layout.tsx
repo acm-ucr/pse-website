@@ -17,10 +17,8 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ReactQueryClientProvider>
-          {children}
-          <Footer />
-        </ReactQueryClientProvider>
+        <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+        <Footer />
       </body>
     </html>
   );

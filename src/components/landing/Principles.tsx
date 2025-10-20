@@ -16,7 +16,7 @@ const principles = [
 const Principles = () => {
   return (
     <div className="flex min-h-screen flex-col items-start justify-center px-20 py-10">
-      <div className="font-pse-crimson-text text-pse-purple-300 mb-8 text-5xl">
+      <div className="font-pse-crimson-text text-pse-purple-400 mb-8 text-5xl">
         Our Principles
       </div>
 
@@ -24,7 +24,7 @@ const Principles = () => {
         {principles.map((name) => (
           <div
             key={name}
-            className="bg-pse-purple-100 font-pse-gfs-didot flex h-14 w-56 items-center justify-center rounded-2xl text-xl shadow-md"
+            className="bg-pse-purple-100 font-pse-maitree flex h-16 w-60 items-center justify-center rounded-xl text-xl font-semibold shadow-lg"
           >
             {name}
           </div>

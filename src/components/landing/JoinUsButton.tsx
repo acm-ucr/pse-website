@@ -5,7 +5,7 @@ const JoinUsButton = () => {
     <div className="flex h-screen w-screen items-center justify-center">
       <Link
         href="@/join-us"
-        className="font-pse-gfs-didot rounded-xl bg-[#FFC653] px-18 py-5 text-3xl tracking-wider text-[#2A2A2A]"
+        className="font-pse-maitree rounded-xl bg-pse-yellow-100 px-18 py-5 text-3xl tracking-wider text-pse-black-100"
       >
         JOIN US!
       </Link>

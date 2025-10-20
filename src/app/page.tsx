@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/ui/navbar";
 import JoinUsButton from "@/components/landing/JoinUsButton";
 const Home = () => {
@@ -10,7 +9,6 @@ const Home = () => {
         text="JOIN US!"
         color="bg-pse-yellow-100"
       />
-
     </div>
   );
 };

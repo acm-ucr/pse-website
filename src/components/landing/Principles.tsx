@@ -16,29 +16,17 @@ const principles = [
 const Principles = () => {
   return (
     <div className="flex min-h-screen flex-col items-start justify-center px-20 py-10">
-      <img
-        src="/home/Our Principles.svg"
-        alt="Our Principles"
-        className="w-72"
-      />
+      <div className="font-pse-crimson-text text-pse-purple-300 mb-8 text-5xl">
+        Our Principles
+      </div>
 
-      <div className="grid grid-cols-3 -space-y-12">
+      <div className="grid grid-cols-3 gap-8">
         {principles.map((name) => (
           <div
             key={name}
-            className="relative flex h-36 w-72 items-center justify-center"
+            className="bg-pse-purple-100 font-pse-gfs-didot flex h-14 w-56 items-center justify-center rounded-2xl text-xl shadow-md"
           >
-            <img
-              src="/home/Rectangle.svg"
-              alt="Rectangle Background"
-              className="absolute inset-0 h-full w-full"
-            />
-
-            <img
-              src={`/home/${name}.svg`}
-              alt={name}
-              className="block scale-75 object-contain"
-            />
+            {name}
           </div>
         ))}
       </div>

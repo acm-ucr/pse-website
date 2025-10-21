@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "@/components/landing/Button";
 import PSEBg from "@/public/landing/pse_bg.webp";
 import Image from "next/image";
 
@@ -19,6 +20,13 @@ const PSEBanner = () => {
       <p className="font-pse-maitree z-10 -mt-18 scale-50 text-center text-[40px] whitespace-nowrap text-white transition-transform duration-300 ease-out sm:-mt-16 sm:scale-60 md:-mt-10 md:scale-75 lg:-mt-6 lg:scale-100">
         University of California, Riverside Chapter
       </p>
+      <div className="relative z-10 mt-0 scale-80 transition-transform duration-300 ease-out hover:bg-red-500 sm:mt-2 sm:scale-90 md:mt-8 md:scale-100 lg:mt-10 lg:scale-110">
+        <Button
+          link="https://docs.google.com/forms/d/e/1FAIpQLSco0HkuBMDgfyNt2JmmyuYf9OYI5aGxlGIkl4B9omNPD74zWw/viewform"
+          text="JOIN US!"
+          color="bg-pse-yellow-100"
+        />
+      </div>
     </div>
   );
 };

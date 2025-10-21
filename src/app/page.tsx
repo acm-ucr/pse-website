@@ -1,6 +1,5 @@
 "use client";
-
-import Navbar from "@/components/ui/navbar";
+import Navbar from "@/components/navbar";
 import Principles from "@/components/landing/Principles";
 const Home = () => {
   return (

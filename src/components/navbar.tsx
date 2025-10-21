@@ -21,9 +21,7 @@ const Navbar = () => (
       </div>
 
       <div className="flex space-x-6 text-white">
-        <a href="#" className="">
-          ABOUT US
-        </a>
+        <div>ABOUT US</div>
 
         <div className="group relative">
           <button>MEMBERS</button>

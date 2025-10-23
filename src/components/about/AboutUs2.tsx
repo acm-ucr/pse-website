@@ -4,7 +4,7 @@ import Customer from "@/public/about/Customer.webp";
 import Leadership from "@/public/about/Leadership.webp";
 import PersonalGrowth from "@/public/about/PersonalGrowth.webp";
 
-const AboutUs = () => {
+const AboutUs2 = () => {
   return (
     <div className="mx-auto grid grid-cols-2 gap-x-[18vh] gap-y-[6vh]">
       <div className="flex flex-col items-center justify-center text-center">
@@ -70,4 +70,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUs2;

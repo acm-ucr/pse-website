@@ -1,11 +1,11 @@
 import AboutUs2 from "@/components/aboutus/AboutUs2";
 
-const Home = () => {
+const AboutUs = () => {
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-center">
+    <>
       <AboutUs2 />
-    </div>
+    </>
   );
 };
 
-export default Home;
+export default AboutUs;

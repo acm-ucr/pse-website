@@ -15,10 +15,10 @@ const OurMission = () => {
       </div>
 
       <div className="order-1 flex flex-col items-end justify-center text-right">
-        <p className="text-pse-purple-400 font-pse-crimson-text text-6xl">
+        <p className="text-pse-purple-400 font-pse-crimson-text text-7xl">
           Our Mission
         </p>
-        <p className="text-pse-black-100 font-pse-maitree mt-[3vh] w-[56vh] text-2xl leading-normal">
+        <p className="text-pse-black-100 font-pse-maitree mt-[3vh] w-[56vh] text-3xl leading-normal">
           Pi Sigma Epsilon is the only{" "}
           <span className="font-semibold">
             national co-ed professional fraternity

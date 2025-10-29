@@ -1,4 +1,4 @@
-import AboutUs2 from "@/components/about/AboutUs2";
+import AboutUs2 from "@/components/aboutus/AboutUs2";
 
 const Home = () => {
   return (

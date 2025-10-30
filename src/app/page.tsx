@@ -1,10 +1,9 @@
 "use client";
-
 import Principles from "@/components/landing/Principles";
 
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
+    <div className="flex w-full flex-col items-center justify-start">
       {/*<JoinUsButton
         link="https://docs.google.com/forms/d/e/1FAIpQLSco0HkuBMDgfyNt2JmmyuYf9OYI5aGxlGIkl4B9omNPD74zWw/viewform"
         text="JOIN US!"

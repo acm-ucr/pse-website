@@ -1,5 +1,6 @@
 "use client";
 import Principles from "@/components/landing/Principles";
+import OurMission from "@/components/landing/ourmission";
 
 const Home = () => {
   return (
@@ -9,8 +10,10 @@ const Home = () => {
         text="JOIN US!"
         color="bg-pse-yellow-100"
       />*/}
+    <>
+      <OurMission />
       <Principles />
-    </div>
+    </>
   );
 };
 

@@ -10,10 +10,10 @@ const Home = () => {
         text="JOIN US!"
         color="bg-pse-yellow-100"
       />*/}
-    <>
+    
       <OurMission />
       <Principles />
-    </>
+    </div>
   );
 };
 

@@ -19,7 +19,7 @@ const BoardCard: React.FC<Props> = ({ role, name, image, linkedin }) => {
         boxShadow: "0 10px 30px rgba(0, 0, 0, 0.25)",
       }}
       transition={{ duration: 0.2 }}
-      className="mt-5 flex flex-col items-center rounded-lg border-6 border-transparent bg-pse-purple-150 p-4"
+      className="bg-pse-purple-150 mt-5 flex flex-col items-center rounded-lg border-6 border-transparent p-4"
     >
       <div className="relative h-80 w-80 overflow-hidden rounded-xl">
         <Image
@@ -32,14 +32,14 @@ const BoardCard: React.FC<Props> = ({ role, name, image, linkedin }) => {
 
       <div className="mt-4 text-center tracking-wide">
         <div
-          className={`font-pse-gfs-didot font-bold text-pse-purple-250 ${
+          className={`font-pse-gfs-didot text-pse-purple-250 font-bold ${
             role === "VP of Administration" ? "text-3xl" : "text-4xl"
           }`}
         >
           {role}
         </div>
         <div
-          className={`font-pse-maitree text-3xl font-light text-pse-purple-500 ${
+          className={`font-pse-maitree text-pse-purple-500 text-3xl font-light ${
             name === "Samantha Condevillamar" ? "text-[28px]" : "text-2xl"
           }`}
         >

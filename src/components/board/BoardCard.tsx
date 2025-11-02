@@ -54,7 +54,7 @@ const BoardCard: React.FC<Props> = ({ role, name, image, linkedin }) => {
         className="mt-6"
       >
         <Image
-          src="/board/LinkedIn.png"
+          src="/board/LinkedIn.webp"
           width={40}
           height={40}
           alt="LinkedIn"

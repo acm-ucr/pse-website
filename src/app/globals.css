@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Lato:wght@300;400;700&family=GFS+Didot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Lato:wght@300;400;700&family=GFS+Didot&family=Maitree:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --color-pse-purple-100: #b09fca;
-  --color-pse-purple-200: #7a63a3;
-  --color-pse-purple-300: #544175;
+  --color-pse-purple-100: #f9f4ff;
+  --color-pse-purple-200: #b09fca;
+  --color-pse-purple-300: #7a63a3;
+  --color-pse-purple-400: #544175;
+  --color-pse-purple-500: #3d2c59;
   --color-pse-gray-100: #c1c1c1;
   --color-pse-black-100: #2a2a2a;
   --color-pse-yellow-100: #ffc653;
@@ -12,6 +14,7 @@
   --font-pse-crimson-text: "Crimson Text", serif;
   --font-pse-lato: "Lato", sans-serif;
   --font-pse-gfs-didot: "GFS Didot", serif;
+  --font-pse-maitree: "Maitree", serif;
 }
 
 body {

@@ -1,5 +1,4 @@
 "use client";
-
 import Principles from "@/components/landing/Principles";
 import OurMission from "@/components/landing/ourmission";
 

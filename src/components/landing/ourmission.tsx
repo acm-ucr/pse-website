@@ -3,7 +3,7 @@ import ourmission from "@/public/landing/ourmission.webp";
 
 const OurMission = () => {
   return (
-    <div className="mx-auto grid grid-cols-2 gap-[32vh]">
+    <div className="mx-auto grid grid-cols-2 gap-[32vh] pt-[14vh]">
       <div className="relative order-1 h-[65vh] w-full">
         <Image
           src={ourmission}

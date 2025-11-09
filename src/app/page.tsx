@@ -1,6 +1,4 @@
-"use client";
-
-import Principles from "@/components/landing/Principles";
+import Card from "@/components/board/Card";
 
 const Home = () => {
   return (
@@ -10,7 +8,12 @@ const Home = () => {
         text="JOIN US!"
         color="bg-pse-yellow-100"
       />*/}
-      <Principles />
+      <Card
+        image="@/public/aboutus/linkedin.webp"
+        role="President"
+        name="Cassidy Yin"
+        linkedin="https://www.linkedin.com/in/gurjotsingh0307/"
+      />
     </div>
   );
 };

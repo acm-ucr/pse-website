@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
+import { ImLinkedin } from "react-icons/im";
 
 type Props = {
   role: string;
@@ -19,7 +20,7 @@ const BoardCard: React.FC<Props> = ({ role, name, image, linkedin }) => {
         boxShadow: "0 10px 30px rgba(0, 0, 0, 0.25)",
       }}
       transition={{ duration: 0.2 }}
-      className="mt-5 flex flex-col items-center rounded-lg border-6 border-transparent bg-[#EDE1FF] p-4"
+      className="bg-pse-purple-200 mt-5 flex w-96 flex-col items-center rounded-lg border-6 border-transparent p-4"
     >
       <div className="relative h-80 w-80 overflow-hidden rounded-xl">
         <Image
@@ -32,14 +33,14 @@ const BoardCard: React.FC<Props> = ({ role, name, image, linkedin }) => {
 
       <div className="mt-4 text-center tracking-wide">
         <div
-          className={`font-pse-gfs-didot font-bold text-[#9F7BDE] ${
+          className={`font-pse-gfs-didot text-pse-purple-400 font-bold ${
             role === "VP of Administration" ? "text-3xl" : "text-4xl"
           }`}
         >
           {role}
         </div>
         <div
-          className={`font-pse-maitree text-3xl font-light text-[#3D2C59] ${
+          className={`font-pse-maitree text-pse-purple-500 text-3xl font-normal ${
             name === "Samantha Condevillamar" ? "text-[28px]" : "text-2xl"
           }`}
         >
@@ -53,12 +54,7 @@ const BoardCard: React.FC<Props> = ({ role, name, image, linkedin }) => {
         rel="noopener noreferrer"
         className="mt-6"
       >
-        <Image
-          src="/board/LinkedIn.png"
-          width={40}
-          height={40}
-          alt="LinkedIn"
-        />
+        <ImLinkedin className="text-pse-purple-300 h-10 w-10" />
       </a>
     </motion.div>
   );

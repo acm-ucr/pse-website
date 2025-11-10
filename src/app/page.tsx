@@ -1,4 +1,6 @@
 "use client";
+
+import PSEBanner from "@/components/landing/PSEBanner";
 import Principles from "@/components/landing/Principles";
 import OurMission from "@/components/landing/ourmission";
 
@@ -10,7 +12,7 @@ const Home = () => {
         text="JOIN US!"
         color="bg-pse-yellow-100"
       />*/}
-
+      <PSEBanner />
       <OurMission />
       <Principles />
     </div>

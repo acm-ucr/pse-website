@@ -1,6 +1,6 @@
 "use client";
 
-import Description from "@/components/aboutUs/Description";
+import Principles from "@/components/landing/Principles";
 
 const Home = () => {
   return (
@@ -10,9 +10,7 @@ const Home = () => {
         text="JOIN US!"
         color="bg-pse-yellow-100"
       />*/}
-      {/* <Principles /> */}
-
-      <Description />
+      <Principles />
     </div>
   );
 };

@@ -34,7 +34,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./build
+      # - name: List files
+      #   run: ls -la # or use tree . for a tree like structure  
   deploy:
     runs-on: ubuntu-latest
     needs: build

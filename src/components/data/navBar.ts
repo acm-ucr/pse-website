@@ -1,5 +1,5 @@
 export const tags = [
-  { name: "About Us", link: "/about" },
+  { name: "About Us", link: "/aboutus" },
   {
     name: "Members",
     dropdown: [

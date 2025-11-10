@@ -32,7 +32,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="relative flex items-center space-x-4 font-medium text-white">
+        <div className="relative flex items-center space-x-4 font-medium font-pse-maitree text-white">
           {tags.map((item) =>
             item.dropdown ? (
               <div

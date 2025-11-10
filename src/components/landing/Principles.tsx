@@ -17,7 +17,7 @@ const principles = [
 
 const Principles = () => {
   return (
-    <div className="flex min-h-screen flex-col items-start justify-center px-20 py-10">
+    <div className="mx-auto flex min-h-screen flex-col items-start justify-center px-20 py-10">
       <div className="font-pse-crimson-text text-pse-purple-400 mb-12 text-7xl">
         Our Principles
       </div>

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { ImLinkedin } from "react-icons/im";
+import Link from "next/link";
 
 type Props = {
   role: string;
@@ -48,14 +49,14 @@ const BoardCard: React.FC<Props> = ({ role, name, image, linkedin }) => {
         </div>
       </div>
 
-      <a
+      <Link
         href={linkedin || "#"}
         target="_blank"
         rel="noopener noreferrer"
         className="mt-6"
       >
-        <ImLinkedin className="text-pse-purple-300 h-10 w-10" />
-      </a>
+        <ImLinkedin className="text-pse-purple-300 size-8" />
+      </Link>
     </motion.div>
   );
 };

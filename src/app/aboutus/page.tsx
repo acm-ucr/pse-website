@@ -1,11 +1,15 @@
+import TitleComp from "@/components/TitleComp";
+import AboutUs2 from "@/components/aboutus/AboutUs2";
 import Description from "@/components/aboutUs/Description";
 
-const Home = () => {
+const AboutUs = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
+    <>
+      <TitleComp title="About Us" />;
+      <AboutUs2 />
       <Description />
-    </div>
+    </>
   );
 };
 
-export default Home;
+export default AboutUs;

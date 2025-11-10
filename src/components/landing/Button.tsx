@@ -8,14 +8,10 @@ interface ButtonProps {
 
 const Button = ({ link, text, color }: ButtonProps) => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="relative inline-flex justify-center">
       <Link
         href={link}
-        className={
-          "font-pse-maitree rounded-xl " +
-          color +
-          " text-pse-black-100 px-18 py-5 text-3xl tracking-wider"
-        }
+        className={`font-pse-maitree relative h-full w-full rounded-xl ${color} text-pse-black-100 px-13 py-3 text-[30px] tracking-wider`}
       >
         {text}
       </Link>

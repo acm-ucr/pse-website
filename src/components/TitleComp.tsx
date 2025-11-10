@@ -1,5 +1,5 @@
 import Image from "next/image";
-import titlecomp from "@/public/about/titlecomp.webp";
+import titlecomp from "@/../public/about/titlecomp.webp";
 
 interface TitleProp {
   title: string;

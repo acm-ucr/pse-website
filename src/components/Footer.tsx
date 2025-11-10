@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/public/PSE-Gradient-Logo-3.webp";
+import logo from "@/../public/PSE-Gradient-Logo-3.webp";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 

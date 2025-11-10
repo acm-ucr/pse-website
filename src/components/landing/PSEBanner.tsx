@@ -6,7 +6,7 @@ import Button from "@/components/landing/Button";
 const PSEBanner = () => {
   return (
     <div
-      className={`relative flex h-[309.5px] w-full flex-col items-center justify-center overflow-clip transition-transform duration-300 ease-out sm:h-[359px] md:h-[409px] lg:h-[459px]`}
+      className={`relative flex h-[309px] w-full flex-col items-center justify-center overflow-clip transition-transform duration-300 ease-out sm:h-[359px] md:h-[409px] lg:h-[459px]`}
     >
       <Image
         src={PSEBg}

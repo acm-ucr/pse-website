@@ -1,3 +1,4 @@
+"use client";
 import PSEBanner from "@/components/landing/PSEBanner";
 import Principles from "@/components/landing/Principles";
 import OurMission from "@/components/landing/ourmission";

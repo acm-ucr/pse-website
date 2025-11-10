@@ -1,7 +1,7 @@
 export default function OurPartners() {
   return (
     <div className="bg-pse-purple-400 flex flex-col items-start px-8 py-16 text-white">
-      <div className="w-full max-w-3xl">
+      <div className="ml-10 w-full max-w-3xl">
         <h2 className="text-pse-yellow-100 font-pse-gfs-didot mb-4 text-5xl">
           Our Partners
         </h2>

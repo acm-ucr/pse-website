@@ -1,7 +1,7 @@
-import Briefcase from "@/public/about/Briefcase.webp";
-import Customer from "@/public/about/Customer.webp";
-import Leadership from "@/public/about/Leadership.webp";
-import PersonalGrowth from "@/public/about/PersonalGrowth.webp";
+import Briefcase from "@/../public/about/Briefcase.webp";
+import Customer from "@/../public/about/Customer.webp";
+import Leadership from "@/../public/about/Leadership.webp";
+import PersonalGrowth from "@/../public/about/PersonalGrowth.webp";
 import AboutUs2Card from "@/components/aboutus/AboutUs2Card";
 
 const AboutUs2 = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import PSEBg from "@/public/landing/pse_bg.webp";
+import PSEBg from "@/../public/landing/pse_bg.webp";
 import Image from "next/image";
 import Button from "@/components/landing/Button";
 

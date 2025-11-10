@@ -2,7 +2,7 @@ import Briefcase from "@/../public/about/Briefcase.webp";
 import Customer from "@/../public/about/Customer.webp";
 import Leadership from "@/../public/about/Leadership.webp";
 import PersonalGrowth from "@/../public/about/PersonalGrowth.webp";
-import AboutUs2Card from "@/components/test/AboutUs2Card";
+import AboutUs2Card from "@/components/aboutpage/AboutUs2Card";
 
 const AboutUs2 = () => {
   return (

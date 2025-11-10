@@ -1,6 +1,6 @@
 import TitleComp from "@/components/TitleComp";
 import AboutUs2 from "@/components/aboutus/AboutUs2";
-import Description from "@/components/aboutUs/Description";
+import Description from "@/components/aboutus/Description";
 
 const AboutUs = () => {
   return (

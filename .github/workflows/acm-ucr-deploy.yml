@@ -32,7 +32,14 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
-      - uses: acm-ucr/build@v2
+      # - uses: acm-ucr/build@v2
+      - name: Install dependencies
+        run: npm ci
+      - name: Build with Next.js
+        run: npm run build
+        env:
+          NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY: ${{secrets.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}}
+          NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL: ${{secrets.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}}
       - run: touch ./.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:

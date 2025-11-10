@@ -12,11 +12,11 @@ const NotFound = () => {
           Page Not Found
         </p>
       </div>
-        <Button
-          link="/"
-          text="Home"
-          color="bg-pse-purple-500 hover:bg-pse-purple-600 text-white"
-        />
+      <Button
+        link="/"
+        text="Home"
+        color="bg-pse-purple-500 hover:bg-pse-purple-600 text-white"
+      />
     </div>
   );
 };

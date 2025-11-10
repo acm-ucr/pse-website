@@ -4,7 +4,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import pseLogo from "@/public/PSE-Gradient-Logo-3.webp";
+import pseLogo from "@/../public/PSE-Gradient-Logo-3.webp";
 import { tags } from "@/components/data/navBar";
 
 const Navbar = () => {

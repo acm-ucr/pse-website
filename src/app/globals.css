@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Lato:wght@300;400;700&family=GFS+Didot&family=Maitree:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
-@import "tw-animate-css";
+/* @import "tw-animate-css"; */
 
 @custom-variant dark (&:is(.dark *));
 

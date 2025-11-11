@@ -16,7 +16,7 @@ export default function InterestSection() {
             Interested?
           </p>
           <Button
-            link="/get-involved"
+            link="https://docs.google.com/forms/d/e/1FAIpQLSco0HkuBMDgfyNt2JmmyuYf9OYI5aGxlGIkl4B9omNPD74zWw/viewform"
             text="Get Involved!"
             color="bg-pse-purple-400 text-white hover:opacity-90"
           />

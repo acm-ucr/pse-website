@@ -3,10 +3,8 @@ import Button from "@/components/landing/Button";
 
 export default function InterestSection() {
   return (
-    <div className="bg-white">
-      <div className="mx-auto flex max-w-screen-xl flex-col justify-center gap-14 px-4 py-12 md:flex-row">
-        <div className="flex-1">
-          <div className="space-y-9">
+    <div className="bg-white mx-auto flex max-w-screen-xl flex-col justify-center gap-14 px-4 py-12 md:flex-row">
+        <div className="flex-1 space-y-9">
             <p className="mt-4 text-lg leading-relaxed text-black">
               We are open to students of all majors who are passionate about
               professional development in marketing, sales, and management. We
@@ -24,7 +22,6 @@ export default function InterestSection() {
                 color="bg-pse-purple-400 text-white hover:opacity-90"
               />
             </div>
-          </div>
         </div>
 
         <div className="flex items-center justify-center gap-8 md:w-[45%]">
@@ -38,6 +35,5 @@ export default function InterestSection() {
           />
         </div>
       </div>
-    </div>
   );
 }

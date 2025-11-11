@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  output: 'export',
   reactStrictMode: true,
   images: {
     loader: "akamai",
     path: "",
     unoptimized: true,
   },
-  basePath: "/pse-website",
-  assetPrefix: "/pse-website",
+  basePath: '/pse-website',
+  assetPrefix: '/pse-website',
 };
 
 module.exports = nextConfig;

@@ -7,8 +7,8 @@ const nextConfig = {
     path: "",
     unoptimized: true,
   },
-  basePath: "",
-  assetPrefix: "",
+  basePath: "/pse-website",
+  assetPrefix: "/pse-website",
 };
 
 module.exports = nextConfig;

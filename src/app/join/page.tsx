@@ -1,8 +1,11 @@
-import InterestSection from "@/components/landing/InterestSection";
-export default function JoinUs() {
+import Testimonials from "@/components/join/testimonials";
+
+const JoinUs = () => {
   return (
-    <div>
-      <InterestSection />
-    </div>
+    <>
+      <Testimonials />
+    </>
   );
-}
+};
+
+export default JoinUs;

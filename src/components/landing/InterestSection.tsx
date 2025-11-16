@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PseGroup from "@/public/pse-group.webp";
 import Button from "@/components/landing/Button";
 
 export default function InterestSection() {
@@ -26,7 +27,7 @@ export default function InterestSection() {
       <div className="flex items-center justify-center gap-8 md:w-[45%]">
         <div className="bg-pse-yellow-100 h-58 w-2"></div>
         <Image
-          src="/pse-group.webp"
+          src={PseGroup}
           alt="PSE members at tabling event"
           width={280}
           height={280}

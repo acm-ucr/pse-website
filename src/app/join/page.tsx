@@ -1,8 +1,15 @@
+import Testimonials from "@/components/join/testimonials";
 import InterestSection from "@/components/landing/InterestSection";
-export default function JoinUs() {
+import TitleComp from "@/components/TitleComp";
+
+const JoinUs = () => {
   return (
-    <div>
+    <>
+      <TitleComp title="Join US" />
       <InterestSection />
-    </div>
+      <Testimonials />
+    </>
   );
-}
+};
+
+export default JoinUs;

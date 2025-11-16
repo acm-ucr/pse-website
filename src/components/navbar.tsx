@@ -18,7 +18,7 @@ const Navbar = () => {
     pathname === link || pathname.startsWith(link + "/");
 
   return (
-    <nav className="bg-pse-purple-500 z-50 border-b shadow-md backdrop-blur-md">
+    <nav className="bg-pse-purple-500 z-50 shadow-md backdrop-blur-md">
       <div className="font-pse-crimson-text mx-auto flex items-center justify-between px-8 py-3">
         <div className="flex items-center gap-4">
           <Link href="/">

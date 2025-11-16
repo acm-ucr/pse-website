@@ -1,74 +1,84 @@
 "use client";
 import BoardCard from "@/components/board/BoardCard";
+import Cassidy from "@/public/board/cassidy.webp";
+import Benjamin from "@/public/board/benjamin.webp";
+import Timothy from "@/public/board/timothy.webp";
+import Leanne from "@/public/board/leanne.webp";
+import Clair from "@/public/board/clair.webp";
+import Ashley from "@/public/board/ashley.webp";
+import Matthew from "@/public/board/matthew.webp";
+import Samantha from "@/public/board/samantha.webp";
+import Kassidy from "@/public/board/kassidy.webp";
+import Noah from "@/public/board/noah.webp";
 
 const boardMembers = [
   {
     role: "President",
     name: "Cassidy Yin",
-    image: "/board/cassidy.webp",
+    image: Cassidy,
     linkedin: "https://www.linkedin.com/in/cassidy-yin-91ab67217",
   },
 
   {
     role: "Secretary",
     name: "Benjamin Lewis",
-    image: "/board/benjamin.webp",
+    image: Benjamin,
     linkedin: "https://www.linkedin.com/in/benjaminlewis5505",
   },
 
   {
     role: "VP of HR",
     name: "Timothy Yeon",
-    image: "/board/timothy.webp",
+    image: Timothy,
     linkedin: "https://www.linkedin.com/in/timothy-yeon",
   },
 
   {
     role: "VP of HR",
     name: "Leanne Chin",
-    image: "/board/leanne.webp",
+    image: Leanne,
     linkedin: "https://www.linkedin.com/in/leanne-chin-b276b6335",
   },
 
   {
     role: "VP of Administration",
     name: "Clair Kang",
-    image: "/board/clair.webp",
+    image: Clair,
     linkedin: "https://www.linkedin.com/in/clairckang",
   },
 
   {
     role: "VP of Finance",
     name: "Ashley Vo",
-    image: "/board/ashley.webp",
+    image: Ashley,
     linkedin: "https://www.linkedin.com/in/ashleyvo2004",
   },
 
   {
     role: "VP of Marketing",
     name: "Matthew Rho",
-    image: "/board/matthew.webp",
+    image: Matthew,
     linkedin: "https://www.linkedin.com/in/matrho",
   },
 
   {
     role: "VP of Pro. Dev.",
     name: "Samantha Condevillamar",
-    image: "/board/samantha.webp",
+    image: Samantha,
     linkedin: "https://www.linkedin.com/in/samantha-lei-conde",
   },
 
   {
     role: "VP of PR",
     name: "Kassidy Quan",
-    image: "/board/kassidy.webp",
+    image: Kassidy,
     linkedin: "https://www.linkedin.com/in/kassidy-quan",
   },
 
   {
     role: "VP of DEI",
     name: "Noah Castro",
-    image: "/board/noah.webp",
+    image: Noah,
     linkedin: "https://www.linkedin.com/in/noah-castro-61525732b",
   },
 ];

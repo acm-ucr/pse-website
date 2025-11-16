@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/navbar";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {

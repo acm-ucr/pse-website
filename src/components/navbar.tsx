@@ -31,7 +31,7 @@ const Navbar = () => {
             />
           </Link>
           <div className="flex flex-col leading-tight">
-            <span className="text-2xl font-bold tracking-wide text-white">
+            <span className="text-2xl font-light tracking-wide text-white">
               ΠΣΕ
             </span>
             <span className="text-base text-white">Pi Sigma Epsilon</span>

@@ -1,14 +1,14 @@
 import Link from "next/link";
 
-interface JoinUsButtonProps {
+interface ButtonProps {
   link: string;
   text: string;
   color: string;
 }
 
-const JoinUsButton = ({ link, text, color }: JoinUsButtonProps) => {
+const Button = ({ link, text, color }: ButtonProps) => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
+    <div className="flex items-center justify-center">
       <Link
         href={link}
         className={
@@ -23,4 +23,4 @@ const JoinUsButton = ({ link, text, color }: JoinUsButtonProps) => {
   );
 };
 
-export default JoinUsButton;
+export default Button;

@@ -6,7 +6,7 @@ import AboutUs2Card from "@/components/aboutus/AboutUs2Card";
 
 const AboutUs2 = () => {
   return (
-    <div className="mx-auto grid max-w-6xl grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2 items-stretch pb-24">
+    <div className="mx-auto grid max-w-6xl grid-cols-1 items-stretch gap-x-12 gap-y-16 pb-24 md:grid-cols-2">
       <AboutUs2Card
         title="Real-World Experience"
         description="Gain hands-on experience through projects, competitions, and internships that will set you apart in the job market."

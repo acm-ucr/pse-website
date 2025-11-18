@@ -31,6 +31,7 @@ export default function Footer() {
             <Link
               href="https://www.instagram.com/ucrpse/"
               target="_blank"
+              rel="noreferrer noopener"
               className="transition hover:opacity-80"
             >
               <FaInstagram size={30} />
@@ -39,6 +40,7 @@ export default function Footer() {
             <Link
               href="https://www.linkedin.com/company/psetg/"
               target="_blank"
+              rel="noreferrer noopener"
               className="transition hover:opacity-80"
             >
               <FaLinkedin size={30} />
@@ -47,6 +49,7 @@ export default function Footer() {
             <Link
               href="https://linktr.ee/ucrpse"
               target="_blank"
+              rel="noreferrer noopener"
               className="transition hover:opacity-80"
             >
               <SiLinktree size={30} />

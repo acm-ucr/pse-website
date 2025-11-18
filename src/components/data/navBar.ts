@@ -16,5 +16,5 @@ export const tags = [
   },
   { name: "Gallery", link: "/gallery" },
   { name: "Newsletter", link: "/newsletter" },
-  { name: "Join Us", link: "/join" },
+  { name: "Join Us", link: "/joinus" },
 ];

@@ -3,7 +3,7 @@ import Testimonials from "@/components/joinus/testimonials";
 
 const JoinUs = () => {
   return (
-    <div className="mx-auto max-w-5xl px-6 py-20">
+    <div className="bg-pse-purple-150 mx-auto max-w-5xl px-6 py-20">
       <TitleComp title="Join Us" />
 
       <div className="mt-16">

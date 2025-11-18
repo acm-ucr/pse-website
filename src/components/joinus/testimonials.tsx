@@ -10,6 +10,7 @@ const testimonials: TestimonialProps[] = [
     quote:
       "Being part of PSE has been such a rewarding experience. I’ve worked alongside my fellow Alpha class members to help build PSE into what it is now. PSE has also given me the opportunity to meet so many people that I don’t think I would’ve met otherwise.",
     image: Lisa,
+    reverse: true,
   },
   {
     name: "Jaydon Yuki",
@@ -17,7 +18,6 @@ const testimonials: TestimonialProps[] = [
     quote:
       "Before joining PSE, I was doing fine navigating classes on my own, but being part of this community took things to a whole new level. Now, I always have people I can count on—whether it’s for study sessions, sharing resources, or just having familiar faces in lecture.",
     image: Jaydon,
-    reverse: true,
   },
 ];
 

@@ -25,7 +25,7 @@ const TestimonialCard = ({
         <h3 className="text-pse-purple-400 font-pse-crimson-text mb-2 text-2xl">
           {name}, {classInfo}
         </h3>
-        <p className="text-pse-black-100 font-pse-maitree max-w-[80ch] text-lg leading-relaxed">
+        <p className="text-pse-black-100 font-pse-maitree bg-pse-purple-150 max-w-[80ch] text-lg leading-relaxed">
           “{quote}”
         </p>
       </div>

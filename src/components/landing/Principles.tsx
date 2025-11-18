@@ -17,16 +17,16 @@ const principles = [
 
 const Principles = () => {
   return (
-    <div className="mx-auto flex min-h-screen flex-col items-start justify-center px-20 py-10">
-      <div className="font-pse-crimson-text text-pse-purple-400 mb-12 text-7xl">
+    <div className="flex min-h-screen flex-col items-start justify-center px-8 py-10 lg:px-20">
+      <div className="font-pse-crimson-text text-pse-purple-400 mb-12 text-5xl md:text-6xl lg:text-8xl">
         Our Principles
       </div>
 
-      <div className="grid w-full grid-cols-2 gap-8 md:grid-cols-3">
+      <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:gap-8">
         {principles.map((name) => (
           <div
             key={name}
-            className="bg-pse-purple-100 font-pse-maitree flex h-[6.5rem] items-center justify-center rounded-2xl text-2xl font-medium shadow-lg sm:text-3xl md:text-4xl"
+            className="bg-pse-purple-100 font-pse-maitree flex h-[6.5rem] items-center justify-center rounded-3xl text-2xl font-medium font-semibold shadow-lg sm:text-3xl md:text-3xl lg:text-4xl"
           >
             {name}
           </div>

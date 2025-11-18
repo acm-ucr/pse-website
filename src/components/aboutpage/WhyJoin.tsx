@@ -3,14 +3,14 @@ import whyjoin from "@/public/about/whyjoin.webp";
 
 const WhyJoin = () => {
   return (
-    <div className="mt-[15vh] grid grid-cols-1 items-center justify-center md:grid-cols-2">
+    <div className="mt-[15vh] flex flex-col md:flex-row items-center justify-center">
       <div className="col-end-2 mx-auto text-center md:ml-[14vh] md:text-left">
         <p className="text-pse-purple-400 font-pse-crimson-text text-5xl md:text-7xl">
           Why Join PSE?
         </p>
-        <p className="text-pse-black-100 font-pse-maitree mt-[3vh] w-[85vh] text-xl leading-normal md:text-3xl">
+        <p className="text-pse-black-100 font-pse-maitree mt-[3vh] w-[85vw] md:w-[45vw] text-xl leading-normal md:text-3xl">
           At PSE, our mission is to develop the sales and marketing leaders of
-          tomorrow. We believe in the power of education, experience, and
+          tomorrow. We believe in the power of education, experience, andl
           ethical practice to drive meaningful change in the business world. By
           joining PSE, you're not just becoming a part of a fraternity— you're
           joining a movement that is dedicated to excellence and innovation in
@@ -18,7 +18,7 @@ const WhyJoin = () => {
         </p>
       </div>
 
-      <div className="mx-auto md:mt-[13vh] md:ml-[24vh]">
+      <div className="mx-auto mt-[3vh] md:mt-0 md:ml-[6vw]">
         <Image
           src={whyjoin}
           alt="whyjoin"

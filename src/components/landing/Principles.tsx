@@ -22,11 +22,11 @@ const Principles = () => {
         Our Principles
       </div>
 
-      <div className="grid w-full grid-cols-3 gap-8">
+      <div className="grid w-full grid-cols-2 gap-8 md:grid-cols-3">
         {principles.map((name) => (
           <div
             key={name}
-            className="bg-pse-purple-100 font-pse-maitree flex h-[6.5rem] w-[25rem] items-center justify-center rounded-2xl text-4xl font-medium shadow-lg"
+            className="bg-pse-purple-100 font-pse-maitree flex h-[6.5rem] items-center justify-center rounded-2xl text-2xl font-medium shadow-lg sm:text-3xl md:text-4xl"
           >
             {name}
           </div>

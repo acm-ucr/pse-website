@@ -7,8 +7,8 @@ import { SiLinktree } from "react-icons/si";
 export default function Footer() {
   return (
     <div className="bg-pse-black-100 w-full px-14 py-8 text-white">
-      <div className="grid grid-cols-2 items-center gap-2">
-        <div className="flex flex-col justify-center">
+      <div className="flex flex-col items-center gap-8 lg:grid lg:grid-cols-2 lg:items-start">
+        <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
           <div className="flex items-center gap-3">
             <Image
               src={logo}
@@ -26,30 +26,33 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col items-end gap-2">
+        <div className="flex flex-col items-center gap-3 lg:items-end">
           <div className="flex gap-2">
             <Link
               href="https://www.instagram.com/ucrpse/"
               target="_blank"
+              rel="noreferrer noopener"
               className="transition hover:opacity-80"
             >
-              <FaInstagram size={35} />
+              <FaInstagram size={30} />
             </Link>
 
             <Link
               href="https://www.linkedin.com/company/psetg/"
               target="_blank"
+              rel="noreferrer noopener"
               className="transition hover:opacity-80"
             >
-              <FaLinkedin size={35} />
+              <FaLinkedin size={30} />
             </Link>
 
             <Link
               href="https://linktr.ee/ucrpse"
               target="_blank"
+              rel="noreferrer noopener"
               className="transition hover:opacity-80"
             >
-              <SiLinktree size={35} />
+              <SiLinktree size={30} />
             </Link>
           </div>
 

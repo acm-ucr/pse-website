@@ -3,7 +3,7 @@ import whyjoin from "@/public/about/whyjoin.webp";
 
 const WhyJoin = () => {
   return (
-    <div className="mt-[15vh] flex flex-col items-center justify-center md:flex-row">
+    <div className="md:my-[12vh] my-[6vh] flex flex-col items-center justify-center md:flex-row">
       <div className="col-end-2 mx-auto text-center md:ml-[14vh] md:text-left">
         <p className="text-pse-purple-400 font-pse-crimson-text text-5xl md:text-7xl">
           Why Join PSE?

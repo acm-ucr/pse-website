@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { RiArrowLeftFill, RiArrowRightFill } from "react-icons/ri";
-import { DayPicker } from "react-day-picker";
+import { DayPicker, DayPickerProps } from "react-day-picker";
 import { useState } from "react";
 import { GoogleEventProps } from "../calendar/calendarcall";
 import CalendarDay from "@/components/calendar/month/calendarday";
@@ -89,25 +89,33 @@ function Calendar({
           day_hidden: "",
           ...classNames,
         }}
-        components={{
-          IconLeft: () => (
-            <div onClick={prevMonth}>
-              <RiArrowLeftFill />
-            </div>
-          ),
-          IconRight: () => (
-            <div onClick={nextMonth}>
-              <RiArrowRightFill />
-            </div>
-          ),
-          Day: ({ displayMonth, date }) => (
-            <CalendarDay
-              date={date}
-              displayMonth={displayMonth}
-              events={events}
-            />
-          ),
-        }}
+        components={
+          {
+            IconLeft: () => (
+              <div onClick={prevMonth}>
+                <RiArrowLeftFill />
+              </div>
+            ),
+            IconRight: () => (
+              <div onClick={nextMonth}>
+                <RiArrowRightFill />
+              </div>
+            ),
+            Day: ({
+              displayMonth,
+              date,
+            }: {
+              displayMonth: Date;
+              date: Date;
+            }) => (
+              <CalendarDay
+                date={date}
+                displayMonth={displayMonth}
+                events={events}
+              />
+            ),
+          } as unknown as Partial<DayPickerProps>["components"]
+        }
         {...props}
       />
     </div>

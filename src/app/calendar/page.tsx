@@ -1,7 +1,12 @@
-import EventPageCard from "@/components/eventpage/EventPageCard";
+"use client";
+import TitleComp from "@/components/TitleComp";
+import EventPageCard from "@/components/calendar/EventPageCard";
+import Calendar from "@/components/calendar/calendarcall"
 
 const EventPage = () => {
   return (
+    <>
+    <TitleComp title="Calendar" />
     <div className="flex w-full flex-col items-center">
       <EventPageCard
         title="Event Name"
@@ -18,6 +23,8 @@ const EventPage = () => {
         location="HUB 265"
       />
     </div>
+    <Calendar />
+    </>
   );
 };
 

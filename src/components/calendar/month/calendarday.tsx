@@ -1,6 +1,5 @@
 import { GoogleEventProps } from "@/components/calendar/calendarcall";
 import { useState, useEffect } from "react";
-import type { FC } from "react";
 import CalendarEventPopover from "./calendareventpopover";
 import {
   Popover,
@@ -15,9 +14,6 @@ interface DayProps {
 }
 
 const CalendarDay = ({ date, events }: DayProps) => {
-
-  console.log("CalendarDay date value:", date, "type:", typeof date);
-
   const today = new Date();
   const isPastDay = date < new Date(new Date().setHours(0, 0, 0, 0));
 
@@ -77,50 +73,61 @@ const CalendarDay = ({ date, events }: DayProps) => {
 
   return (
     <div
-      className={`flex h-full w-full flex-col gap-y-[0.5vw] border-1 border-gray-300 aspect-square ${isToday ? "bg-pse-purple-100" : ""} ${isPastDay ? "bg-gray-100" : ""}`}
+      className={`flex aspect-square h-full w-full flex-col border border-gray-300 p-1 md:p-2 ${
+        isToday ? "bg-pse-purple-200" : isPastDay ? "bg-gray-100" : "bg-white"
+      }`}
     >
-      <p className="text-pse-purple-400 pt-1 pl-1 flex text-sm  md:pt-3 md:pl-3 md:text-4xl">
+      <p
+        className={`text-pse-purple-400 text-sm font-medium md:text-2xl lg:text-3xl ${
+          isPastDay ? "text-gray-400" : ""
+        }`}
+      >
         {date.getDate()}
       </p>
+      <div className="mt-1 flex flex-col gap-1 overflow-hidden">
+        {filteredEvents
+          .slice(0, displayEventCount)
+          .map(({ start, summary, end, description, location }, index) => (
+            <CalendarEventPopover
+              key={index}
+              startDate={start}
+              endDate={end}
+              title={summary}
+              description={description}
+              date={date}
+              location={location || "TBD"}
+            />
+          ))}
 
-      {filteredEvents
-        .slice(0, displayEventCount)
-        .map(({ start, summary, end, description, location }, index) => (
-          <CalendarEventPopover
-            key={index}
-            startDate={start}
-            endDate={end}
-            title={summary}
-            description={description}
-            date={date}
-            location={location || "TBD"}
-          />
-        ))}
-
-      {filteredEvents.length > visibleEventCount && (
-        <Popover>
-          <PopoverTrigger className="w-full cursor-pointer hover:opacity-75">
-            <p className="text-[0.8vw] font-semibold">
-              {filteredEvents.length - displayEventCount} Other Events
-            </p>
-          </PopoverTrigger>
-          <PopoverContent>
-            {filteredEvents
-              .slice(displayEventCount)
-              .map(({ summary, start, location, description }, idx) => (
-                <div className="px-[10%] pt-[1vh]" key={idx}>
-                  <CalendarEventPopover
-                    startDate={start}
-                    title={summary}
-                    date={date}
-                    description={description}
-                    location={location || "TBD"}
-                  />
-                </div>
-              ))}
-          </PopoverContent>
-        </Popover>
-      )}
+        {filteredEvents.length > visibleEventCount && (
+          <Popover>
+            <PopoverTrigger className="mt-0.5 w-full cursor-pointer text-center hover:opacity-75">
+              <p className="text-pse-purple-400 text-xs font-semibold md:text-sm">
+                +{filteredEvents.length - displayEventCount} more
+              </p>
+            </PopoverTrigger>
+            <PopoverContent className="w-64 p-2">
+              <div className="flex flex-col gap-2">
+                {filteredEvents
+                  .slice(displayEventCount)
+                  .map(
+                    ({ summary, start, end, location, description }, idx) => (
+                      <CalendarEventPopover
+                        key={idx}
+                        startDate={start}
+                        endDate={end}
+                        title={summary}
+                        date={date}
+                        description={description}
+                        location={location || "TBD"}
+                      />
+                    ),
+                  )}
+              </div>
+            </PopoverContent>
+          </Popover>
+        )}
+      </div>
     </div>
   );
 };

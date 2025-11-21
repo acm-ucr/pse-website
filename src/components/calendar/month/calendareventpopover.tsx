@@ -2,7 +2,6 @@ import {
   Dialog,
   DialogContent,
   DialogTrigger,
-  DialogOverlay,
   DialogTitle,
 } from "@/components/ui/dialog";
 
@@ -65,48 +64,57 @@ const CalendarEventPopover = ({
         });
     }
   }
+  console.log("Event title:", title, "Type:", typeof title);
 
   return (
     <Dialog>
-      <DialogTrigger
-        className="flex cursor-pointer justify-center bg-pse-purple-300 rounded-lg py-0.5 mx-1  text-white hover:opacity-75"
-      >
-        <span className="pr-1 text-center text-md">
-          {hasStartTime &&
-            eventStartDate.toLocaleTimeString("en-US", {
-              hour: "numeric",
-              minute: "2-digit",
-              timeZone: "America/Los_Angeles",
-            })}
-        </span>
-        <span className="overflow-hidden px-1 pl-1 text-xs text-ellipsis whitespace-nowrap">
-          {title}
-        </span>
+      <DialogTrigger className="bg-pse-purple-300 w-full cursor-pointer rounded px-1.5 py-0.5 text-white transition-opacity hover:opacity-80 md:px-2 md:py-1">
+        <div className="flex items-center justify-center gap-1 text-xs md:text-sm">
+          {hasStartTime && (
+            <span className="shrink-0 font-medium">
+              {eventStartDate.toLocaleTimeString("en-US", {
+                hour: "numeric",
+                minute: "2-digit",
+                timeZone: "America/Los_Angeles",
+              })}
+            </span>
+          )}
+          <span className="truncate">{title}</span>
+        </div>
       </DialogTrigger>
-      <DialogOverlay className="bg-gray-400/60">
-        <DialogContent className="z-50 border-2 border-black p-0 shadow-md overflow-hidden">
-          <DialogTitle>
-            <div className="flex items-center justify-between bg-pse-purple-300 px-4 py-3 text-xl font-semibold text-white">
-              <p className="truncate">{title}</p>
-            </div>
-          </DialogTitle>
 
-          <div className="bg-white px-4 py-3 text-lg text-black">
-            <div className="flex">
-              <p className="pr-2 whitespace-nowrap">
-                {date.toLocaleString("default", {
-                  month: "short",
-                  day: "numeric",
-                  year: "numeric",
-                })}
-              </p>
-              <div>{hasStartTime && <p>{timeRangeDisplay}</p>}</div>
-            </div>
-            <p>{location}</p>
-            {description && <p className="pt-4 pb-4">{description}</p>}
+      <DialogContent className="overflow-hidden rounded-lg border-0 p-0 shadow-xl sm:max-w-md">
+        <div className="bg-pse-purple-300 px-5 py-4">
+          <DialogTitle className="text-lg font-semibold text-white md:text-xl">
+            {title}
+          </DialogTitle>
+        </div>
+        <div className="space-y-3 bg-white px-5 py-4 text-black">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+            <p className="font-medium">
+              {date.toLocaleString("default", {
+                weekday: "short",
+                month: "short",
+                day: "numeric",
+                year: "numeric",
+              })}
+            </p>
+            {hasStartTime && (
+              <p className="text-gray-600">{timeRangeDisplay}</p>
+            )}
           </div>
-        </DialogContent>
-      </DialogOverlay>
+          {location && (
+            <div className="flex items-start gap-2">
+              <p>{location}</p>
+            </div>
+          )}
+          {description && (
+            <div className="border-t border-gray-200 pt-3">
+              <p className="text-gray-700">{description}</p>
+            </div>
+          )}
+        </div>
+      </DialogContent>
     </Dialog>
   );
 };

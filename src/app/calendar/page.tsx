@@ -2,11 +2,13 @@
 import TitleComp from "@/components/TitleComp";
 import EventPageCard from "@/components/calendar/EventPageCard";
 import Calendar from "@/components/calendar/calendarcall";
+import UpcomingEvents from "@/components/calendar/upcoming";
 
 const EventPage = () => {
   return (
     <>
       <TitleComp title="Calendar" />
+      {/* replace mock data later */}
       <div className="flex w-full flex-col items-center">
         <EventPageCard
           title="Event Name"
@@ -23,6 +25,7 @@ const EventPage = () => {
           location="HUB 265"
         />
       </div>
+      <UpcomingEvents />
       <Calendar />
     </>
   );

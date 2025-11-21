@@ -65,7 +65,6 @@ function Calendar({
         }}
         className={`${className} pb-8`}
         classNames={{
-          // v9 class names
           months: "",
           month: "",
           month_caption: "",
@@ -73,14 +72,12 @@ function Calendar({
           nav: "space-x-8",
           button_previous: "hidden",
           button_next: "hidden",
-          month_grid: "w-full",
+          month_grid: "w-full space-y-1",
           weekdays:
             "border-2 border-gray-400 bg-pse-purple-150 py-4 w-full rounded-t-xl text-center mt-4 items-center justify-center grid grid-cols-7",
-          weekday:
-            "text-pse-purple-400 text-md font-normal md:text-3xl py-1 md:py-2",
-          weeks: "border-1 border-t-0 border-gray-400 w-full -px-1",
+          weekday: "text-pse-purple-400 text-md md:text-3xl py-1 md:py-2",
           week: "grid grid-cols-7",
-          day: "",
+          day: "bg-winc-beige-100 border border-winc-orange-100 p-0 bg-white h-[15vh] md:h-[20vh]",
           day_button: "w-full h-full",
           range_end: "",
           selected: "",
@@ -91,7 +88,6 @@ function Calendar({
           ...classNames,
         }}
         components={{
-          // v9 uses Chevron instead of IconLeft/IconRight
           Chevron: (props) => {
             if (props.orientation === "left") {
               return (
@@ -106,12 +102,8 @@ function Calendar({
               </div>
             );
           },
-          // v9: Day component receives { day, modifiers, ... }
-          // day.date is the actual Date object
           Day: (props) => {
             const { day } = props;
-            
-            // In v9, day is a CalendarDay object with a .date property
             const date = day.date;
             const displayMonth = day.displayMonth;
 

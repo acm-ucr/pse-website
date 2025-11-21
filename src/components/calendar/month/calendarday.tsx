@@ -1,5 +1,6 @@
 import { GoogleEventProps } from "@/components/calendar/calendarcall";
 import { useState, useEffect } from "react";
+import type { FC } from "react";
 import CalendarEventPopover from "./calendareventpopover";
 import {
   Popover,
@@ -14,6 +15,9 @@ interface DayProps {
 }
 
 const CalendarDay = ({ date, events }: DayProps) => {
+
+  console.log("CalendarDay date value:", date, "type:", typeof date);
+
   const today = new Date();
   const isPastDay = date < new Date(new Date().setHours(0, 0, 0, 0));
 
@@ -73,9 +77,9 @@ const CalendarDay = ({ date, events }: DayProps) => {
 
   return (
     <div
-      className={`flex h-full w-full flex-col gap-y-[0.5vw] ${isToday ? "bg-winc-yellow-200" : ""} ${isPastDay ? "text-gray-600" : ""}`}
+      className={`flex h-full w-full flex-col gap-y-[0.5vw] border-1 border-gray-300 aspect-square ${isToday ? "bg-pse-purple-100" : ""} ${isPastDay ? "bg-gray-100" : ""}`}
     >
-      <p className="text-winc-blue-500 mt-1 mr-1 flex justify-end text-sm font-bold md:mt-2 md:ml-2 md:text-3xl">
+      <p className="text-pse-purple-400 pt-1 pl-1 flex text-sm  md:pt-3 md:pl-3 md:text-4xl">
         {date.getDate()}
       </p>
 

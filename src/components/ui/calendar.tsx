@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { RiArrowLeftFill, RiArrowRightFill } from "react-icons/ri";
-import { DayPicker, DayPickerProps } from "react-day-picker";
+import { DayPicker } from "react-day-picker";
 import { useState } from "react";
 import { GoogleEventProps } from "../calendar/calendarcall";
 import CalendarDay from "@/components/calendar/month/calendarday";
@@ -65,57 +65,65 @@ function Calendar({
         }}
         className={`${className} pb-8`}
         classNames={{
+          // v9 class names
           months: "",
           month: "",
-          caption: "",
+          month_caption: "",
           caption_label: "",
           nav: "space-x-8",
-          nav_button: "",
-          nav_button_previous: "hidden",
-          nav_button_next: "hidden",
-          table: "w-full  space-y-1",
-          head_row:
-            "border border-winc-orange-100 flex mt-[2vw] w-full rounded-t-xl text-center items-center justify-center grid grid-cols-7",
-          head_cell:
-            "text-white bg-winc-red-400 text-md md:text-3xl py-1 md:py-2",
-          row: "grid grid-cols-7",
-          cell: "bg-winc-beige-100 border border-winc-orange-100 p-0 bg-white h-[15vh] md:h-[20vh]",
+          button_previous: "hidden",
+          button_next: "hidden",
+          month_grid: "w-full",
+          weekdays:
+            "border-2 border-gray-400 bg-pse-purple-150 py-4 w-full rounded-t-xl text-center mt-4 items-center justify-center grid grid-cols-7",
+          weekday:
+            "text-pse-purple-400 text-md font-normal md:text-3xl py-1 md:py-2",
+          weeks: "border-1 border-t-0 border-gray-400 w-full -px-1",
+          week: "grid grid-cols-7",
           day: "",
-          day_range_end: "",
-          day_selected: "",
-          day_outside: "",
-          day_disabled: "",
-          day_range_middle: "",
-          day_hidden: "",
+          day_button: "w-full h-full",
+          range_end: "",
+          selected: "",
+          outside: "",
+          disabled: "",
+          range_middle: "",
+          hidden: "",
           ...classNames,
         }}
-        components={
-          {
-            IconLeft: () => (
-              <div onClick={prevMonth}>
-                <RiArrowLeftFill />
-              </div>
-            ),
-            IconRight: () => (
+        components={{
+          // v9 uses Chevron instead of IconLeft/IconRight
+          Chevron: (props) => {
+            if (props.orientation === "left") {
+              return (
+                <div onClick={prevMonth}>
+                  <RiArrowLeftFill />
+                </div>
+              );
+            }
+            return (
               <div onClick={nextMonth}>
                 <RiArrowRightFill />
               </div>
-            ),
-            Day: ({
-              displayMonth,
-              date,
-            }: {
-              displayMonth: Date;
-              date: Date;
-            }) => (
+            );
+          },
+          // v9: Day component receives { day, modifiers, ... }
+          // day.date is the actual Date object
+          Day: (props) => {
+            const { day } = props;
+            
+            // In v9, day is a CalendarDay object with a .date property
+            const date = day.date;
+            const displayMonth = day.displayMonth;
+
+            return (
               <CalendarDay
                 date={date}
                 displayMonth={displayMonth}
                 events={events}
               />
-            ),
-          } as unknown as Partial<DayPickerProps>["components"]
-        }
+            );
+          },
+        }}
         {...props}
       />
     </div>

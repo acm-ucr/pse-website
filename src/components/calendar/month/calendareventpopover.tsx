@@ -5,6 +5,7 @@ import {
   DialogOverlay,
   DialogTitle,
 } from "@/components/ui/dialog";
+
 interface CalendarEventPopoverProps {
   startDate: {
     dateTime?: string;
@@ -19,16 +20,6 @@ interface CalendarEventPopoverProps {
   location?: string;
   description?: string;
 }
-
-const dayClasses: Record<number, string> = {
-  0: "bg-winc-red-400 text-white",
-  1: "bg-winc-yellow-200 text-winc-blue-500",
-  2: "bg-winc-orange-100 text-white",
-  3: "bg-winc-yellow-200 text-winc-blue-500",
-  4: "bg-winc-orange-100 text-white",
-  5: "bg-winc-yellow-200 text-winc-blue-500",
-  6: "bg-winc-red-400 text-white",
-};
 
 const CalendarEventPopover = ({
   startDate,
@@ -75,14 +66,12 @@ const CalendarEventPopover = ({
     }
   }
 
-  const dayClass = dayClasses[date.getDay()] ?? "bg-white";
-
   return (
     <Dialog>
       <DialogTrigger
-        className={`flex w-full cursor-pointer justify-center py-1 text-left font-bold hover:opacity-75 ${dayClass}`}
+        className="flex cursor-pointer justify-center bg-pse-purple-300 rounded-lg py-0.5 mx-1  text-white hover:opacity-75"
       >
-        <span className="pr-1 text-right text-xs">
+        <span className="pr-1 text-center text-md">
           {hasStartTime &&
             eventStartDate.toLocaleTimeString("en-US", {
               hour: "numeric",
@@ -95,14 +84,14 @@ const CalendarEventPopover = ({
         </span>
       </DialogTrigger>
       <DialogOverlay className="bg-gray-400/60">
-        <DialogContent className="bg-winc-yellow-200 text-winc-blue-500 z-50 border-2 border-black p-0 shadow-md">
+        <DialogContent className="z-50 border-2 border-black p-0 shadow-md overflow-hidden">
           <DialogTitle>
-            <div className="flex items-center justify-between px-4 pt-2 text-xl font-semibold">
+            <div className="flex items-center justify-between bg-pse-purple-300 px-4 py-3 text-xl font-semibold text-white">
               <p className="truncate">{title}</p>
             </div>
           </DialogTitle>
 
-          <div className="rounded-b-xl bg-white px-4 py-3 text-lg">
+          <div className="bg-white px-4 py-3 text-lg text-black">
             <div className="flex">
               <p className="pr-2 whitespace-nowrap">
                 {date.toLocaleString("default", {

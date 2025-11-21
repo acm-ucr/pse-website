@@ -1,4 +1,4 @@
-import { RiArrowLeftFill, RiArrowRightFill } from "react-icons/ri";
+import { RiArrowLeftFill, RiArrowLeftSLine, RiArrowRightFill, RiArrowRightSLine } from "react-icons/ri";
 
 interface CalendarTopProps {
   currentDate: Date;
@@ -12,38 +12,38 @@ const CalendarTop = ({
   onNextMonth,
 }: CalendarTopProps) => {
   const monthNames = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
+    "JANUARY",
+    "FEBUARY",
+    "MARCH",
+    "APRIL",
+    "MAY",
+    "JUNE",
+    "JULY",
+    "AUGUST",
+    "SEPTEMBER",
+    "OCTOBER",
+    "NOVEMBER",
+    "DECEMBER",
   ];
 
   return (
     <div className="mx-auto flex w-10/12 flex-col items-center justify-between md:flex-row">
-      <div className="text-winc-red-400 flex w-full items-center justify-center pb-6 md:justify-start md:space-x-4 md:pb-0">
+      <div className="text-pse-purple-500 flex w-full items-center justify-center pb-6 md:justify-start md:space-x-4 md:pb-0">
         <button
           onClick={onPrevMonth}
-          className="text-3xl transition hover:-translate-x-1 md:text-4xl"
+          className="text-4xl transition hover:-translate-x-1 md:text-5xl"
         >
-          <RiArrowLeftFill />
+          <RiArrowLeftSLine />
         </button>
-        <span className="w-fit px-4 text-3xl font-bold md:px-0 md:text-4xl">
-          {monthNames[currentDate.getMonth()]} {currentDate.getFullYear()}
-        </span>
         <button
           onClick={onNextMonth}
-          className="text-3xl transition hover:translate-x-1 md:text-4xl"
+          className="text-4xl transition hover:translate-x-1 md:text-5xl"
         >
-          <RiArrowRightFill />
+          <RiArrowRightSLine />
         </button>
+        <span className="w-fit px-4 text-4xl font-semibold md:px-0 md:text-5xl font-pse-crimson-text">
+          {monthNames[currentDate.getMonth()]} {currentDate.getFullYear()}
+        </span>
       </div>
     </div>
   );

@@ -72,7 +72,7 @@ const CalendarDay = ({ date, events }: DayProps) => {
   }, []);
 
   return (
-    <div
+    <td
       className={`flex aspect-square h-full w-full flex-col border border-gray-300 p-1 md:p-2 ${
         isToday ? "bg-pse-purple-200" : isPastDay ? "bg-gray-100" : "bg-white"
       }`}
@@ -128,7 +128,7 @@ const CalendarDay = ({ date, events }: DayProps) => {
           </Popover>
         )}
       </div>
-    </div>
+    </td>
   );
 };
 

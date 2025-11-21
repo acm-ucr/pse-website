@@ -1,12 +1,12 @@
-import Briefcase from "@/../public/about/Briefcase.webp";
-import Customer from "@/../public/about/Customer.webp";
-import Leadership from "@/../public/about/Leadership.webp";
-import PersonalGrowth from "@/../public/about/PersonalGrowth.webp";
-import AboutUs2Card from "@/components/aboutpage/AboutUs2Card";
+import Briefcase from "@/public/about/Briefcase.webp";
+import Customer from "@/public/about/Customer.webp";
+import Leadership from "@/public/about/Leadership.webp";
+import PersonalGrowth from "@/public/about/PersonalGrowth.webp";
+import AboutUs2Card from "@/components/aboutus/AboutUs2Card";
 
 const AboutUs2 = () => {
   return (
-    <div className="mx-auto mt-[35vh] grid max-w-[160vh] grid-cols-2 gap-y-[6vh]">
+    <div className="mx-auto grid max-w-6xl grid-cols-1 items-stretch gap-x-12 gap-y-16 pb-24 md:grid-cols-2">
       <AboutUs2Card
         title="Real-World Experience"
         description="Gain hands-on experience through projects, competitions, and internships that will set you apart in the job market."

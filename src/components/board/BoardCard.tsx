@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion } from "motion/react";
 import { ImLinkedin } from "react-icons/im";
 import Link from "next/link";
@@ -8,7 +8,7 @@ import Link from "next/link";
 type Props = {
   role: string;
   name: string;
-  image: string;
+  image: StaticImageData;
   linkedin: string;
 };
 

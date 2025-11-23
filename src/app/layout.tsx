@@ -7,7 +7,7 @@ import Navbar from "@/components/navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "PSE",
+  title: "Pi Sigma Epsilon",
   description: "The official website of PSE",
 };
 

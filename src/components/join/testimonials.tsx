@@ -28,7 +28,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="order-2 mx-auto mt-[4vh] md:mx-[0] md:mt-[0vh]">
+        <div className="order-2 mx-auto mt-[4vh] md:mx-[0vw] md:mt-[0vh]">
           <Image
             src={testimonial2}
             alt="testimonial2"

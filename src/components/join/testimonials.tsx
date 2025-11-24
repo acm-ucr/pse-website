@@ -4,7 +4,7 @@ import testimonial2 from "@/public/join/testimonial2.webp";
 const Testimonials = () => {
   return (
     <div className="bg-pse-purple-150 flex h-full w-full flex-col py-[12vh]">
-      <div className="mx-auto grid grid-cols-1 gap-x-[70vh] md:grid-cols-2">
+      <div className="mx-auto grid grid-cols-1 gap-x-[28vw] md:grid-cols-2">
         <div className="order-1 mb-[2vh] w-[38vw] text-center md:ml-[12vw] md:text-left">
           <p className="text-pse-purple-250 font-pse-crimson-text mb-[2vh] text-2xl font-medium">
             Jaydon Yuki, Class Gamma, Class of 2027
@@ -28,7 +28,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="order-2 mx-auto mt-[4vh] md:mx-[-4vw] md:mt-[0vh]">
+        <div className="order-2 mx-auto mt-[4vh] md:mx-[0] md:mt-[0vh]">
           <Image
             src={testimonial2}
             alt="testimonial2"

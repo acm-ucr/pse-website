@@ -15,7 +15,7 @@ const NotFound = () => {
       <Button
         link="/"
         text="Home"
-        color="bg-pse-purple-500 hover:bg-pse-purple-600 text-white px-8 py-3 text-xl md:px-10 md:py-4 md:text-2xl lg:px-12 md:py-4 md:text-3xl"
+        color="bg-pse-purple-500 hover:bg-pse-purple-600 text-white px-8 py-3 text-xl md:px-10 md:py-4 md:text-2xl lg:px-12 lg:py-5 lg:text-3xl"
       />
     </div>
   );

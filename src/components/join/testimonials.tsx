@@ -1,11 +1,40 @@
 import Image from "next/image";
+import testimonial1 from "@/public/join/testimonial1.webp";
 import testimonial2 from "@/public/join/testimonial2.webp";
 
 const Testimonials = () => {
   return (
-    <div className="bg-pse-purple-150 flex h-full w-full flex-col py-[12vh]">
-      <div className="mx-auto grid grid-cols-1 gap-x-[28vw] md:grid-cols-2">
-        <div className="order-1 mb-[2vh] w-[38vw] text-center md:ml-[12vw] md:text-left">
+    <div className="bg-pse-purple-150 flex h-full w-full flex-col py-[10vh]">
+      <div className="mb-[8vh] text-center md:ml-[19vw] md:text-left">
+        <p className="text-pse-purple-400 font-pse-crimson-text text-6xl">
+          Testimonials
+        </p>
+      </div>
+
+      <div className="mx-auto mb-[10vh] grid grid-cols-1 md:mb-[15vh] md:grid-cols-2">
+        <div className="order-1 mx-auto w-[60vw] text-center md:order-2 md:w-[30.5vw] md:text-left">
+          <p className="text-pse-purple-250 font-pse-crimson-text mb-[2vh] text-2xl font-medium">
+            Lisa Patel, Class Alpha, Class of 2026{" "}
+          </p>
+          <p className="text-pse-black-100 font-pse-maitree mb-[4vh] text-xl font-light">
+            “Being part of PSE has been such a rewarding experience. I’ve worked
+            alongside my fellow Alpha class members to help build PSE into what
+            it is now. PSE has also given me the opportunity to meet so many
+            people that I don’t think I would’ve met otherwise.”
+          </p>
+        </div>
+
+        <div className="order-2 mx-auto md:order-1 md:mx-[0vw] md:mt-[0vh]">
+          <Image
+            src={testimonial1}
+            alt="testimonial1"
+            className="h-[32vh] w-[32vh] rounded-full object-cover"
+          />
+        </div>
+      </div>
+
+      <div className="mx-auto grid grid-cols-1 md:grid-cols-2">
+        <div className="order-1 w-[60vw] text-center md:w-[30.5vw] md:text-left">
           <p className="text-pse-purple-250 font-pse-crimson-text mb-[2vh] text-2xl font-medium">
             Jaydon Yuki, Class Gamma, Class of 2027
           </p>
@@ -22,17 +51,17 @@ const Testimonials = () => {
             John, and Matt Nakano. Working with people I already had a bond with
             through PSE made the experience a lot more fun and comfortable.
           </p>
-          <p className="text-pse-black-100 font-pse-maitree text-xl font-light">
+          <p className="text-pse-black-100 font-pse-maitree mb-[4vh] text-xl font-light">
             PSE has been more than just a professional org—it’s a tight-knit
             community that’s helped me grow both academically and personally.”
           </p>
         </div>
 
-        <div className="order-2 mx-auto mt-[4vh] md:mx-[0vw] md:mt-[0vh]">
+        <div className="order-2 mx-auto md:mx-[0] md:ml-[13vw]">
           <Image
             src={testimonial2}
             alt="testimonial2"
-            className="h[-32vh] w-[32vh] rounded-full object-cover"
+            className="h-[32vh] w-[32vh] rounded-full object-cover"
           />
         </div>
       </div>

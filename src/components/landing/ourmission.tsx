@@ -18,7 +18,7 @@ const OurMission = () => {
         <p className="text-pse-purple-400 font-pse-crimson-text text-5xl md:text-7xl">
           Our Mission
         </p>
-        <p className="text-pse-black-100 font-pse-maitree mt-[3vh] w-[56vh] max-w-md text-2xl leading-normal sm:text-xl md:max-w-none md:text-3xl">
+        <p className="text-pse-black-100 font-pse-maitree mt-[3vh] w-[77vw] max-w-md text-2xl leading-normal sm:text-xl md:w-[28vw] md:max-w-none md:text-3xl">
           Pi Sigma Epsilon is the only{" "}
           <span className="font-semibold">
             national co-ed professional fraternity

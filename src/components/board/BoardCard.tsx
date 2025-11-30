@@ -21,9 +21,9 @@ const BoardCard: React.FC<Props> = ({ role, name, image, linkedin }) => {
         boxShadow: "0 10px 30px rgba(0, 0, 0, 0.25)",
       }}
       transition={{ duration: 0.2 }}
-      className="bg-pse-purple-200 mt-5 flex w-96 flex-col items-center rounded-lg border-6 border-transparent p-4"
+      className="bg-pse-purple-200 mt-5 flex max-w-96 w-[95%] flex-col items-center rounded-lg border-6 border-transparent p-4"
     >
-      <div className="relative h-80 w-80 overflow-hidden rounded-xl">
+      <div className="relative w-full h-80 max-w-80 overflow-hidden rounded-xl">
         <Image
           src={image || "/default-profile.png"}
           alt={name}

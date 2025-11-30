@@ -85,7 +85,7 @@ const boardMembers = [
 
 const BoardGrid: React.FC = () => {
   return (
-    <div className="grid h-full w-auto grid-cols-1 justify-items-center gap-14 pb-5 sm:grid-cols-2 md:grid-cols-3">
+    <div className="grid h-full w-full grid-cols-1 justify-items-center gap-10 px-4 pb-5 sm:grid-cols-2 lg:grid-cols-3">
       {boardMembers.map((member, index) => (
         <BoardCard key={index} {...member} />
       ))}

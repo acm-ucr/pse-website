@@ -34,7 +34,7 @@ const Testimonials = () => {
       </div>
 
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2">
-        <div className="order-1 w-[60vw] text-center md:w-[30.5vw] md:text-left">
+        <div className="order-1 w-[60vw] pl-9 text-center md:w-[30.5vw] md:pl-0 md:text-left">
           <p className="text-pse-purple-250 font-pse-crimson-text mb-[2vh] text-2xl font-medium">
             Jaydon Yuki, Class Gamma, Class of 2027
           </p>

@@ -21,7 +21,9 @@ export function EventSection({
           </p>
         </div>
       </div>
-      <p className="text-pse-black-100 font-pse-maitree text-lg">{description}</p>
+      <p className="text-pse-black-100 font-pse-maitree text-lg">
+        {description}
+      </p>
       <EventCarousel images={images} />
     </div>
   );

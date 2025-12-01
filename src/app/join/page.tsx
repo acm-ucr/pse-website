@@ -1,11 +1,11 @@
-import Testimonials from "@/components/join/testimonials";
+import Testimonials from "@/components/joinus/testimonials";
 import InterestSection from "@/components/landing/InterestSection";
 import TitleComp from "@/components/TitleComp";
 
 const JoinUs = () => {
   return (
     <>
-      <TitleComp title="Join US" />
+      <TitleComp title="Join Us" />
       <InterestSection />
       <Testimonials />
     </>

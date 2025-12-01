@@ -1,10 +1,12 @@
 import BoardGrid from "@/components/board/BoardGrid";
+import TitleComp from "@/components/TitleComp";
 
 const ExecutiveBoardPage = () => {
   return (
-    <div className="flex w-full flex-col items-center justify-start">
+    <>
+      <TitleComp title="E-Board" />
       <BoardGrid />
-    </div>
+    </>
   );
 };
 export default ExecutiveBoardPage;

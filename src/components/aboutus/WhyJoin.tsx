@@ -8,7 +8,7 @@ const WhyJoin = () => {
         <p className="text-pse-purple-400 font-pse-crimson-text text-5xl md:text-7xl">
           Why Join PSE?
         </p>
-        <p className="text-pse-black-100 font-pse-maitree mt-[3vh] w-[85vw] text-xl leading-normal md:w-[45vw] md:text-2xl">
+        <p className="text-pse-black-100 font-pse-maitree mt-[3vh] w-[85vw] text-xl md:w-[45vw] md:text-2xl">
           At PSE, our mission is to develop the sales and marketing leaders of
           tomorrow. We believe in the power of education, experience, andl
           ethical practice to drive meaningful change in the business world. By

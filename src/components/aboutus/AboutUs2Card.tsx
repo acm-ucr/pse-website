@@ -17,7 +17,7 @@ const AboutUs2Card = ({ title, description, image }: AboutUs2CardProps) => {
         alt={title}
         className="mt-[4vh] mb-[4vh] h-[18vh] w-[18vh] object-cover"
       />
-      <p className="text-pse-black-100 font-pse-maitree mx-auto max-w-md text-lg leading-relaxed md:text-xl">
+      <p className="text-pse-black-100 font-pse-maitree mx-auto max-w-md text-lg md:text-xl">
         {description}
       </p>
     </div>

@@ -14,7 +14,7 @@ export default function OurPartners() {
           <p className="text-pse-yellow-100 font-pse-gfs-didot mb-4 text-5xl md:text-7xl">
             Our Partners
           </p>
-          <p className="font-pse-lato max-w-md text-base leading-relaxed md:text-lg">
+          <p className="font-pse-lato max-w-md text-base md:text-lg">
             PSE offers direct access to national partners, creating pathways for
             career advancement and opportunities to learn from industry
             professionals. Grow through valuable experiences like guest

@@ -10,7 +10,7 @@ export function EventSection({
   images,
 }: EventSectionProps) {
   return (
-    <div className="mx-auto max-w-7xl space-y-6 text-center md:text-left">
+    <div className="mx-auto max-w-7xl px-12 text-center md:text-left">
       <div className="flex flex-col gap-4">
         <div className="space-y-2">
           <p className="font-pse-crimson-text text-pse-purple-250 text-3xl font-semibold md:text-5xl">

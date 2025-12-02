@@ -16,7 +16,9 @@ type EventCarouselProps = {
 
 export function EventCarousel({ images }: EventCarouselProps) {
   const items =
-    images.length === 1 ? [...images, ...images, ...images, ...images] : images;
+    images.length === 1
+      ? [...images, ...images, ...images, ...images, ...images]
+      : images;
 
   return (
     <Carousel

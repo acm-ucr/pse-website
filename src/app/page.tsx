@@ -3,6 +3,7 @@
 import PSEBanner from "@/components/landing/PSEBanner";
 import Principles from "@/components/landing/Principles";
 import OurMission from "@/components/landing/ourmission";
+import PhotoGallery from "@/components/landing/PhotoGallery";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <PSEBanner />
       <OurMission />
       <Principles />
+      <PhotoGallery />
     </>
   );
 };

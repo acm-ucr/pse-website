@@ -1,5 +1,4 @@
 import { EventCarousel } from "@/components/overviews/EventCarousel";
-import Image from "next/image";
 import Group1 from "@/public/gallery/group1.webp";
 import Group2 from "@/public/gallery/group2.webp";
 import Group3 from "@/public/gallery/group3.webp";

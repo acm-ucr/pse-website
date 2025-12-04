@@ -7,14 +7,14 @@ interface TitleProp {
 
 const TitleComp = (props: TitleProp) => {
   return (
-    <div className="relative flex h-[27vh] w-full items-center justify-center overflow-hidden">
+    <div className="relative flex h-[20vh] w-full items-center justify-center overflow-hidden md:h-[27vh]">
       <Image
         src={titlecomp}
         alt="TitleComp"
         fill
         className="object-cover object-bottom"
       />
-      <p className="font-pse-crimson-text relative z-10 text-center text-8xl text-white">
+      <p className="font-pse-crimson-text relative z-10 mx-4 text-center text-6xl text-white md:text-8xl">
         {props.title}
       </p>
     </div>

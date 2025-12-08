@@ -1,37 +1,51 @@
-import * as React from "react";
+"use client";
+import { useRef, useState, useEffect } from "react";
 
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-
-export function CarouselSize() {
-  return (
-    <Carousel
-      opts={{
-        align: "start",
-      }}
-      className="w-full max-w-sm"
-    >
-      <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-3xl font-semibold">{index + 1}</span>
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
-  );
+interface CarouselItem {
+  word: string;
 }
+
+interface CarouselProps {
+  data: CarouselItem[];
+}
+
+const CarouselWords = ({ data }: CarouselProps) => {
+  const marqueeReference = useRef<HTMLDivElement>(null);
+  const [duration, setDuration] = useState("25s");
+
+  useEffect(() => {
+    if (marqueeReference.current) {
+      const carouselLength = marqueeReference.current.scrollWidth;
+      const speed = 0.015;
+      setDuration(`${carouselLength * speed}s`);
+    }
+  }, []);
+
+  return (
+    <div className="bg-pse-purple-300 font-pse-maitree relative hidden w-full overflow-x-hidden text-xl text-white md:flex">
+      <div
+        className="animate-marquee flex py-[3vh] whitespace-nowrap"
+        style={{ animationDuration: duration }}
+        ref={marqueeReference}
+      >
+        {data.map(({ word }, index) => (
+          <span key={index} className="mx-4">
+            {word}
+          </span>
+        ))}
+      </div>
+      <div
+        className="animate-marquee-continuation absolute flex justify-between py-[3vh] whitespace-nowrap"
+        style={{ animationDuration: duration }}
+      >
+        {data.map(({ word }, index) => (
+          <span key={index} className="mx-4">
+            {word}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default CarouselWords;

@@ -1,5 +1,7 @@
 "use client";
 
+import Heading from "@/components/ui/heading";
+
 const principles = [
   "Competition",
   "Sincerity",
@@ -18,9 +20,7 @@ const principles = [
 const Principles = () => {
   return (
     <div className="flex min-h-screen flex-col items-start justify-center px-8 py-10 lg:px-20">
-      <div className="font-pse-crimson-text text-pse-purple-400 mb-12 text-5xl md:text-6xl lg:text-8xl">
-        Our Principles
-      </div>
+      <Heading title="Our Principles" className="mx-auto mb-12 md:mx-0" />
 
       <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:gap-8">
         {principles.map((name) => (

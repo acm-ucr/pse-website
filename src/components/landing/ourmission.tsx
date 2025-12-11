@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ourmission from "@/../public/landing/ourmission.webp";
+import Heading from "@/components/ui/heading";
 
 const OurMission = () => {
   return (
@@ -15,10 +16,8 @@ const OurMission = () => {
       </div>
 
       <div className="order-1 flex flex-col justify-center text-center md:items-end md:text-right">
-        <p className="text-pse-purple-400 font-pse-crimson-text text-5xl md:text-7xl">
-          Our Mission
-        </p>
-        <p className="text-pse-black-100 font-pse-maitree mt-[3vh] w-[77vw] max-w-md text-2xl leading-normal sm:text-xl md:w-[28vw] md:max-w-none md:text-3xl">
+        <Heading title="Our Mission" />
+        <p className="text-pse-black-100 font-pse-maitree mt-[3vh] w-[77vw] max-w-md leading-normal sm:text-xl md:w-[28vw] md:max-w-none md:text-3xl">
           Pi Sigma Epsilon is the only{" "}
           <span className="font-semibold">
             national co-ed professional fraternity

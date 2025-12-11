@@ -1,15 +1,15 @@
 import Image from "next/image";
 import testimonial1 from "@/public/join/testimonial1.webp";
 import testimonial2 from "@/public/join/testimonial2.webp";
+import Heading from "@/components/ui/heading";
 
 const Testimonials = () => {
   return (
     <div className="bg-pse-purple-150 flex h-full w-full flex-col py-[10vh]">
-      <div className="mb-[8vh] text-center md:ml-[19vw] md:text-left">
-        <p className="text-pse-purple-400 font-pse-crimson-text text-6xl">
-          Testimonials
-        </p>
-      </div>
+      <Heading
+        title="Testimonials"
+        className="mb-[8vh] text-center md:ml-[19vw] md:text-left"
+      />
 
       <div className="mx-auto mb-[10vh] grid grid-cols-1 md:mb-[15vh] md:grid-cols-2">
         <div className="order-1 mx-auto w-[60vw] text-center md:order-2 md:w-[30.5vw] md:text-left">
@@ -34,7 +34,7 @@ const Testimonials = () => {
       </div>
 
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2">
-        <div className="order-1 w-[60vw] pl-9 text-center md:w-[30.5vw] md:pl-0 md:text-left">
+        <div className="order-1 mx-auto w-[60vw] text-center md:mx-0 md:w-[30.5vw] md:pl-0 md:text-left">
           <p className="text-pse-purple-250 font-pse-crimson-text mb-[2vh] text-2xl font-medium">
             Jaydon Yuki, Class Gamma, Class of 2027
           </p>

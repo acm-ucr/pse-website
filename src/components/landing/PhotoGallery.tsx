@@ -1,4 +1,5 @@
 import { EventCarousel } from "@/components/overviews/EventCarousel";
+import Heading from "@/components/ui/heading";
 import Group1 from "@/public/gallery/group1.webp";
 import Group2 from "@/public/gallery/group2.webp";
 import Group3 from "@/public/gallery/group3.webp";
@@ -56,9 +57,7 @@ const images = [
 const PhotoGallery = () => {
   return (
     <div className="px-8 pb-[14vh] md:px-20">
-      <p className="font-pse-crimson-text text-pse-purple-400 mb-12 text-center text-5xl md:text-6xl lg:text-8xl">
-        Photo Gallery
-      </p>
+      <Heading title="Photo Gallery" className="mb-12 text-center" />
       <EventCarousel images={images} />
     </div>
   );

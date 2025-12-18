@@ -1,14 +1,13 @@
 import Image from "next/image";
 import whyjoin from "@/public/about/whyjoin.webp";
+import Heading from "@/components/ui/heading";
 
 const WhyJoin = () => {
   return (
     <div className="my-[6vh] flex flex-col items-center justify-center md:my-[12vh] md:flex-row">
       <div className="col-end-2 mx-auto text-center md:ml-[14vh] md:text-left">
-        <p className="text-pse-purple-400 font-pse-crimson-text text-5xl md:text-7xl">
-          Why Join PSE?
-        </p>
-        <p className="text-pse-black-100 font-pse-maitree mt-[3vh] w-[85vw] text-xl leading-normal md:w-[45vw] md:text-2xl">
+        <Heading title="Why Join PSE?" />
+        <p className="text-pse-black-100 font-pse-maitree mt-[3vh] w-[85vw] text-xl md:w-[45vw] md:text-2xl">
           At PSE, our mission is to develop the sales and marketing leaders of
           tomorrow. We believe in the power of education, experience, andl
           ethical practice to drive meaningful change in the business world. By

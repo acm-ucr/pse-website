@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import pseLogo from "@/../public/PSE-Gradient-Logo-3.webp";
-import { tags } from "@/components/data/navBar";
+import { tags } from "@/data/navBar";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -92,7 +92,7 @@ const Navbar = () => {
       </div>
 
       {mobileMenuOpen && (
-        <div className="bg-pse-purple-400 font-pse-maitree space-y-3 px-6 py-4 text-white md:hidden">
+        <div className="bg-pse-purple-400 font-pse-maitree absolute top-full right-0 left-0 z-40 space-y-3 px-6 py-4 text-white md:hidden">
           {tags.map((item) =>
             item.dropdown ? (
               <div key={item.name}>

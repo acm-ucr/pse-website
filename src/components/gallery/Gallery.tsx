@@ -24,6 +24,7 @@ import Group22 from "@/public/gallery/group22.webp";
 import Group23 from "@/public/gallery/group23.webp";
 import Group24 from "@/public/gallery/group24.webp";
 import Group25 from "@/public/gallery/group25.webp";
+import Group26 from "@/public/gallery/group10.webp";
 
 const images = [
   Group1,
@@ -51,13 +52,14 @@ const images = [
   Group23,
   Group24,
   Group25,
+  Group26,
 ];
 
 const Gallery = () => {
   return (
     <div className="flex w-full justify-center">
       <div className="mx-auto max-w-6xl px-4 py-10">
-        <div className="columns-1 gap-4 md:columns-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {images.map((img, i) => (
             <div
               key={i}
@@ -66,7 +68,7 @@ const Gallery = () => {
               <Image
                 src={img}
                 alt={`PSE Gallery ${i + 1}`}
-                className="h-auto w-full object-cover"
+                className="h-full w-full object-cover"
               />
             </div>
           ))}

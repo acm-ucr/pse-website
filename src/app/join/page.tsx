@@ -1,5 +1,5 @@
 import Testimonials from "@/components/joinus/testimonials";
-import InterestSection from "@/components/landing/InterestSection";
+import InterestSection from "@/components/joinus/InterestSection";
 import TitleComp from "@/components/TitleComp";
 
 const JoinUs = () => {

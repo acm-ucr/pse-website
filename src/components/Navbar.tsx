@@ -11,7 +11,7 @@ const Navbar = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(
-    null
+    null,
   );
 
   const isActive = (link: string) =>
@@ -79,7 +79,7 @@ const Navbar = () => {
               >
                 {name.toUpperCase()}
               </Link>
-            )
+            ),
           )}
         </div>
 
@@ -104,7 +104,7 @@ const Navbar = () => {
                   }`}
                   onClick={() =>
                     setMobileDropdownOpen(
-                      mobileDropdownOpen === name ? null : name
+                      mobileDropdownOpen === name ? null : name,
                     )
                   }
                 >
@@ -140,7 +140,7 @@ const Navbar = () => {
               >
                 {name.toUpperCase()}
               </Link>
-            )
+            ),
           )}
         </div>
       )}

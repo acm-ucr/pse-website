@@ -1,7 +1,5 @@
 import Image from "next/image";
-import { images } from "@/data/gallery"
-
-
+import { images } from "@/data/gallery";
 
 const Gallery = () => {
   return (

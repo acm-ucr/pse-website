@@ -1,6 +1,6 @@
 import { EventCarousel } from "@/components/overviews/EventCarousel";
 import Heading from "@/components/ui/heading";
-import { gallery } from "@/data/photos"
+import { gallery } from "@/data/photos";
 
 const PhotoGallery = () => {
   return (

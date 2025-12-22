@@ -12,7 +12,7 @@ export default function InterestSection() {
           workshops, competitions, networking events, and social gatherings.
         </p>
 
-        <div className="flex flex-col items-center gap-11 md:flex-row md:gap-22">
+        <div className="flex flex-col items-center gap-11 text-center md:flex-row md:gap-22">
           <p className="text-pse-purple-200 font-pse-crimson-text text-5xl font-semibold">
             Interested?
           </p>

@@ -53,7 +53,7 @@ const BoardCard: React.FC<Props> = ({ role, name, image, linkedin }) => {
         href={linkedin || "#"}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-6"
+        className="mt-6 hover:scale-110"
       >
         <ImLinkedin className="text-pse-purple-300 size-8" />
       </Link>

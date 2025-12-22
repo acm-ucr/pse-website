@@ -1,14 +1,14 @@
 "use client";
 import TitleComp from "@/components/TitleComp";
-import Gallery from "@/components/gallery/Gallery";
+import PhotoGallery from "@/components/gallery/Gallery";
 
-const Home = () => {
+const Gallery = () => {
   return (
     <>
       <TitleComp title="Gallery" />
-      <Gallery />
+      <PhotoGallery />
     </>
   );
 };
 
-export default Home;
+export default Gallery;

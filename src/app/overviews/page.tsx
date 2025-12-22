@@ -4,7 +4,7 @@ import { EventSections } from "@/components/overviews/EventSections";
 const EventOverviews = () => {
   return (
     <>
-      <TitleComp title="Event Overviews" />
+      <TitleComp>Event Overviews</TitleComp>
       <EventSections />
     </>
   );

@@ -11,7 +11,7 @@ const Navbar = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(
-    null,
+    null
   );
 
   const isActive = (link: string) =>
@@ -39,47 +39,47 @@ const Navbar = () => {
         </div>
 
         <div className="font-pse-maitree relative hidden items-center space-x-4 font-medium md:flex">
-          {tags.map((item) =>
-            item.dropdown ? (
-              <div key={item.name} className="group relative">
+          {tags.map(({ name, link, dropdown }) =>
+            dropdown ? (
+              <div key={name} className="group relative">
                 <button
                   className={`flex items-center justify-center gap-1 px-2 text-white hover:text-yellow-400 ${
-                    item.dropdown.some((sub) => isActive(sub.link))
+                    dropdown.some((sub) => isActive(sub.link))
                       ? "text-yellow-400"
                       : ""
                   }`}
                 >
-                  <span>{item.name.toUpperCase()}</span>
+                  <span>{name.toUpperCase()}</span>
                   <span className="text-sm">▼</span>
                 </button>
 
                 <div className="bg-pse-purple-400 invisible absolute top-full left-1/2 mt-1 flex -translate-x-1/2 flex-col overflow-hidden rounded-md text-center text-white opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100">
-                  {item.dropdown.map((sub) => (
+                  {dropdown.map(({ name: subName, link: subLink }) => (
                     <Link
-                      key={sub.name}
-                      href={sub.link}
+                      key={subName}
+                      href={subLink}
                       className={`hover:bg-pse-purple-500 block px-4 py-2 text-white ${
-                        isActive(sub.link)
+                        isActive(subLink)
                           ? "text-pse-purple-500 bg-yellow-400 font-semibold"
                           : ""
                       }`}
                     >
-                      {sub.name.toUpperCase()}
+                      {subName.toUpperCase()}
                     </Link>
                   ))}
                 </div>
               </div>
             ) : (
               <Link
-                key={item.name}
-                href={item.link}
+                key={name}
+                href={link}
                 className={`text-center text-white hover:text-yellow-400 ${
-                  isActive(item.link) ? "font-semibold text-yellow-400" : ""
+                  isActive(link) ? "font-semibold text-yellow-400" : ""
                 }`}
               >
-                {item.name.toUpperCase()}
+                {name.toUpperCase()}
               </Link>
-            ),
+            )
           )}
         </div>
 
@@ -93,37 +93,37 @@ const Navbar = () => {
 
       {mobileMenuOpen && (
         <div className="bg-pse-purple-400 font-pse-maitree absolute top-full right-0 left-0 z-40 space-y-3 px-6 py-4 text-white md:hidden">
-          {tags.map((item) =>
-            item.dropdown ? (
-              <div key={item.name}>
+          {tags.map(({ name, link, dropdown }) =>
+            dropdown ? (
+              <div key={name}>
                 <button
                   className={`flex w-full items-center justify-center gap-2 py-4 font-semibold text-white ${
-                    item.dropdown.some((sub) => isActive(sub.link))
+                    dropdown.some((sub) => isActive(sub.link))
                       ? "text-yellow-400"
                       : ""
                   }`}
                   onClick={() =>
                     setMobileDropdownOpen(
-                      mobileDropdownOpen === item.name ? null : item.name,
+                      mobileDropdownOpen === name ? null : name
                     )
                   }
                 >
-                  <span>{item.name.toUpperCase()}</span>
-                  <span>{mobileDropdownOpen === item.name ? "▲" : "▼"}</span>
+                  <span>{name.toUpperCase()}</span>
+                  <span>{mobileDropdownOpen === name ? "▲" : "▼"}</span>
                 </button>
 
-                {mobileDropdownOpen === item.name && (
+                {mobileDropdownOpen === name && (
                   <div className="flex flex-col space-y-2 pt-1 pl-4 text-center">
-                    {item.dropdown.map((sub) => (
+                    {dropdown.map(({ name: subName, link: subLink }) => (
                       <Link
-                        key={sub.name}
-                        href={sub.link}
+                        key={subName}
+                        href={subLink}
                         className={`block text-sm text-white hover:text-yellow-400 ${
-                          isActive(sub.link) ? "font-bold text-yellow-400" : ""
+                          isActive(subLink) ? "font-bold text-yellow-400" : ""
                         }`}
                         onClick={() => setMobileMenuOpen(false)}
                       >
-                        {sub.name.toUpperCase()}
+                        {subName.toUpperCase()}
                       </Link>
                     ))}
                   </div>
@@ -131,16 +131,16 @@ const Navbar = () => {
               </div>
             ) : (
               <Link
-                key={item.name}
-                href={item.link}
+                key={name}
+                href={link}
                 className={`block py-2 text-center font-semibold text-white hover:text-yellow-400 ${
-                  isActive(item.link) ? "font-semibold text-yellow-400" : ""
+                  isActive(link) ? "font-semibold text-yellow-400" : ""
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
-                {item.name.toUpperCase()}
+                {name.toUpperCase()}
               </Link>
-            ),
+            )
           )}
         </div>
       )}

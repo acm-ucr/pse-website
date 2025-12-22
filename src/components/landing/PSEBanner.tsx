@@ -1,19 +1,19 @@
 import React from "react";
-import PSEBg from "@/../public/landing/pse_bg.webp";
+import PSEBg from "@/public/landing/pse_bg.webp";
 import Image from "next/image";
 import Button from "@/components/landing/Button";
 
 const PSEBanner = () => {
   return (
     <div
-      className={`relative flex h-[309px] w-full flex-col items-center justify-center overflow-clip transition-transform duration-300 ease-out sm:h-[359px] md:h-[409px] lg:h-[459px]`}
+      className={`relative flex h-[255px] w-full flex-col items-center justify-center overflow-clip transition-transform duration-300 ease-out sm:h-[359px] md:h-[409px] lg:h-[459px]`}
     >
       <Image
         src={PSEBg}
         alt="PSE Background"
         className="absolute inset-0 top-[15px] -z-10 flex w-full scale-140 object-cover transition-transform duration-300 ease-out sm:-top-[20px] sm:scale-120"
       />
-      <div className="bg-pse-purple-300/75 absolute inset-0 w-full"></div>
+      <div className="bg-pse-purple-300/75 absolute inset-0 w-full" />
       <div className="z-10">
         <p className="font-pse-crimson-text scale-50 pt-10 text-center text-8xl whitespace-nowrap text-white transition-transform duration-300 ease-out sm:scale-75 md:scale-100 lg:scale-150">
           Pi Sigma Epsilon

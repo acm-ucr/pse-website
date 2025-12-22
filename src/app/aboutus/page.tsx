@@ -7,7 +7,7 @@ import OurPartners from "@/components/aboutus/OurPartners";
 const AboutUs = () => {
   return (
     <>
-      <TitleComp title="About Us" />
+      <TitleComp>About Us</TitleComp>
       <Description />
       <OurPartners />
       <WhyJoin />

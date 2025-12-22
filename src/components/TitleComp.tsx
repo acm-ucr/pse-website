@@ -1,11 +1,12 @@
 import Image from "next/image";
+import { ReactNode } from "react";
 import titlecomp from "@/../public/about/titlecomp.webp";
 
 interface TitleProp {
-  title: string;
+  children: ReactNode;
 }
 
-const TitleComp = (props: TitleProp) => {
+const TitleComp = ({ children }: TitleProp) => {
   return (
     <div className="relative flex h-[20vh] w-full items-center justify-center overflow-hidden md:h-[27vh]">
       <Image
@@ -15,7 +16,7 @@ const TitleComp = (props: TitleProp) => {
         className="object-cover object-bottom"
       />
       <p className="font-pse-crimson-text relative z-10 mx-4 text-center text-6xl text-white md:text-8xl">
-        {props.title}
+        {children}
       </p>
     </div>
   );

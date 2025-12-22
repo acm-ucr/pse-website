@@ -5,7 +5,7 @@ import { allClasses } from "@/data/classes";
 const ClassView = () => {
   return (
     <>
-      <TitleComp title="Classes" />
+      <TitleComp>Classes</TitleComp>
       <Classes classData={allClasses} />
     </>
   );

@@ -11,7 +11,9 @@ const Button = ({ link, text, color }: ButtonProps) => {
     <div className="relative inline-flex justify-center">
       <Link
         href={link}
-        className={`font-pse-maitree relative h-full w-full rounded-xl ${color} text-pse-black-100 px-13 py-3 text-[30px] tracking-wider`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`font-pse-maitree relative h-full w-full rounded-xl ${color} text-pse-black-100 px-13 py-3 text-[30px] tracking-wider transition-transform hover:scale-110`}
       >
         {text}
       </Link>

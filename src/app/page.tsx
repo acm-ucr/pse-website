@@ -2,7 +2,7 @@
 
 import PSEBanner from "@/components/landing/PSEBanner";
 import Principles from "@/components/landing/Principles";
-import OurMission from "@/components/landing/ourmission";
+import OurMission from "@/components/landing/Ourmission";
 import PhotoGallery from "@/components/landing/PhotoGallery";
 import Carousel from "@/components/landing/Carousel";
 

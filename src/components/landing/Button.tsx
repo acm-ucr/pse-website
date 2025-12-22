@@ -13,7 +13,7 @@ const Button = ({ link, text, color }: ButtonProps) => {
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className={`font-pse-maitree relative h-full w-full rounded-xl ${color} text-pse-black-100 px-13 py-3 text-[30px] tracking-wider transition-transform hover:scale-110`}
+        className={`font-pse-maitree relative h-full w-full rounded-xl ${color} text-pse-black-100 px-13 py-3 text-3xl tracking-wider transition-transform hover:scale-110`}
       >
         {text}
       </Link>

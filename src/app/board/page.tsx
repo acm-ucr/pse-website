@@ -1,10 +1,10 @@
-import BoardGrid from "@/components/board/BoardGrid";
+import BoardGrid from "@/components/board/Grid";
 import TitleComp from "@/components/TitleComp";
 
 const ExecutiveBoardPage = () => {
   return (
     <>
-      <TitleComp title="E-Board" />
+      <TitleComp>E-Board</TitleComp>
       <BoardGrid />
     </>
   );

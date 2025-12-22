@@ -4,7 +4,7 @@ import logo from "@/../public/PSE-Gradient-Logo-3.webp";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <div className="bg-pse-black-100 w-full px-14 py-8 text-white">
       <div className="flex flex-col items-center gap-8 lg:grid lg:grid-cols-2 lg:items-start">
@@ -66,4 +66,6 @@ export default function Footer() {
       </div>
     </div>
   );
-}
+};
+
+export default Footer;

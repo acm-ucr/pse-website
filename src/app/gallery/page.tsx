@@ -5,7 +5,7 @@ import PhotoGallery from "@/components/gallery/Gallery";
 const Gallery = () => {
   return (
     <>
-      <TitleComp title="Gallery" />
+      <TitleComp>Gallery</TitleComp>
       <PhotoGallery />
     </>
   );

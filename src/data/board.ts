@@ -1,5 +1,3 @@
-"use client";
-import BoardCard from "@/components/board/BoardCard";
 import Cassidy from "@/public/board/cassidy.webp";
 import Benjamin from "@/public/board/benjamin.webp";
 import Timothy from "@/public/board/timothy.webp";
@@ -11,7 +9,7 @@ import Samantha from "@/public/board/samantha.webp";
 import Kassidy from "@/public/board/kassidy.webp";
 import Noah from "@/public/board/noah.webp";
 
-const boardMembers = [
+export const boardMembers = [
   {
     role: "President",
     name: "Cassidy Yin",
@@ -82,14 +80,3 @@ const boardMembers = [
     linkedin: "https://www.linkedin.com/in/noah-castro-61525732b",
   },
 ];
-
-const BoardGrid: React.FC = () => {
-  return (
-    <div className="flex h-full w-full flex-wrap justify-center gap-x-32 gap-y-20 px-4 py-10">
-      {boardMembers.map((member, index) => (
-        <BoardCard key={index} {...member} />
-      ))}
-    </div>
-  );
-};
-export default BoardGrid;

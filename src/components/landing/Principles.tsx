@@ -23,9 +23,9 @@ const Principles = () => {
       <Heading title="Our Principles" className="mx-auto mb-12 md:mx-0" />
 
       <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:gap-8">
-        {principles.map((name) => (
+        {principles.map((name, index) => (
           <div
-            key={name}
+            key={index}
             className="bg-pse-purple-100 font-pse-maitree flex h-[6.5rem] items-center justify-center rounded-3xl text-2xl font-medium font-semibold shadow-lg sm:text-3xl md:text-3xl lg:text-4xl"
           >
             {name}
